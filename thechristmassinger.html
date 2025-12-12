@@ -20,6 +20,7 @@
                         'ts-dark': '#1A1A1A', 
                         'ts-black': '#0A0A0A', 
                         'ts-red': '#8B0000',
+                        'ts-blue': '#00008B', // Navy blue, vergelijkbaar met de Nederlandse vlag
                         'ts-green': '#0A3A21',
                     },
                     fontFamily: {
@@ -39,20 +40,37 @@
             <a href="index.html" class="text-3xl font-serif text-ts-gold tracking-wider font-bold">
                 The Suited Singer
             </a>
-            <div class="hidden md:flex space-x-8 items-center">
+            <div id="main-nav" class="hidden md:flex space-x-8 items-center">
                 <a href="repertoire.html" class="text-white hover:text-ts-gold transition duration-500">Repertoire</a>
-                <a href="thechristmassinger.html" class="text-ts-gold border-b-2 border-ts-gold transition duration-500">The Christmas Singer</a>
-                <a href="zorg.html" class="text-white hover:text-ts-gold transition duration-500">Zorgentertainment</a>
+                <div class="relative group">
+                    <a id="dropdownButton" class="text-white hover:text-ts-gold transition duration-500 cursor-pointer flex items-center">
+                        Diensten
+                        <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    </a>
+                    <div id="dropdownMenu" class="absolute hidden bg-ts-dark shadow-lg rounded-md py-2 w-48 mt-2 space-y-1 z-50">
+                        <a href="huwelijk.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Huwelijk</a>
+                        <a href="zorg.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Zorgentertainment</a>
+                        <a href="thechristmassinger.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">The Christmas Singer</a>
+                    </div>
+                </div>
                 <a href="blog.html" class="text-white hover:text-ts-gold transition duration-500">Blog</a>
                 <a href="index.html#reviews" class="text-white hover:text-ts-gold transition duration-500">Reviews</a>
-                <a href="#contact" class="bg-ts-red text-white font-semibold px-6 py-2 rounded-full hover:bg-ts-dark transition duration-500 shadow-xl">
+                <a href="#contact" class="bg-ts-red text-white font-semibold px-6 py-2 rounded-full hover:bg-red-700 transition duration-500 shadow-xl">
                     Boek Kerst 2025
                 </a>
             </div>
-            <button class="md:hidden text-white text-xl">
+            <button id="mobile-menu-button" class="md:hidden text-white text-xl">
                 <i class="fas fa-bars"></i>
             </button>
         </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-ts-dark/95 backdrop-blur-sm">
+            <a href="repertoire.html" class="block text-center text-white py-3 hover:bg-ts-gold hover:text-ts-dark transition duration-300">Repertoire</a>
+            <a href="thechristmassinger.html" class="block text-center text-ts-gold py-3 bg-ts-black/30">The Christmas Singer</a>
+            <a href="zorg.html" class="block text-center text-white py-3 hover:bg-ts-gold hover:text-ts-dark transition duration-300">Zorgentertainment</a>
+            <a href="blog.html" class="block text-center text-white py-3 hover:bg-ts-gold hover:text-ts-dark transition duration-300">Blog</a>
+            <a href="index.html#reviews" class="block text-center text-white py-3 hover:bg-ts-gold hover:text-ts-dark transition duration-300">Reviews</a>
+            <a href="#contact" class="block text-center bg-ts-red text-white font-semibold py-4 hover:bg-red-700 transition duration-300">Boek Kerst 2025</a>
+        </div>
     </header>
 
     <main>
@@ -68,12 +86,12 @@
                 <h1 class="text-6xl sm:text-7xl lg:text-8xl font-serif font-extrabold leading-tight mb-4 text-ts-gold drop-shadow-2xl">
                     Dé Kerstzanger van Nederland
                 </h1>
-                
-                <p class="text-xl sm:text-2xl mb-10 font-light max-w-lg mx-auto text-gray-200">
-                    Voor een sfeervol repertoire, van "White Christmas" tot "Let It Snow," brengt The Christmas Singer de warme kerstsfeer naar ieder evenement.
+
+                <p class="text-xl sm:text-2xl mb-10 font-light text-gray-200 max-w-3xl mx-auto">
+                    Met een sfeervol repertoire, van "White Christmas" tot "Let It Snow," brengt The Christmas Singer een warme en stijlvolle kerstsfeer naar ieder evenement. Of het nu gaat om een kerstborrel, kerstmarkt of bedrijfsfeest, The Christmas Singer zorgt voor muziek en ambiance die bijdraagt aan de magie van kerst. Mis deze kans niet! Boek nu voor 2025 en beleef een kerstfeest met live zang, volledig verzorgd en inclusief professionele geluidsset.
                 </p>
 
-                <a href="#pakketten" class="inline-block bg-ts-red text-white font-bold text-lg sm:text-xl px-12 py-4 rounded-lg hover:bg-red-700 transition duration-500 transform hover:scale-105 shadow-2xl">
+                <a href="#pakketten" class="inline-block bg-ts-red text-white font-bold text-lg sm:text-xl px-12 py-4 rounded-lg hover:bg-red-700 transition duration-500 transform hover:scale-105 shadow-2xl mt-4">
                     Bekijk Kerstpakketten 2025
                 </a>
             </div>
@@ -109,34 +127,44 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
                     
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-ts-red" data-aos="zoom-in" data-aos-delay="100">
-                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center"><i class="fas fa-tree mr-3 text-ts-green"></i> Tijdloze Kersthits</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ts-red" data-aos="zoom-in" data-aos-delay="100" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23f0f0f0\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm-4 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center"><i class="fas fa-snowflake mr-3 text-ts-green"></i> Tijdloze Kersthits</h3>
                         <ul class="text-gray-700 space-y-1 text-sm">
                             <li>White Christmas</li>
                             <li>Let It Snow</li>
                             <li>It's Beginning to Look a Lot Like Christmas</li>
                             <li>The Christmas Song</li>
                             <li>Have Yourself a Merry Little Christmas</li>
-                            <li>Jingle Bells / Holly Jolly Christmas</li>
+                            <li>Jingle Bells</li>
+                            <li>Holly Jolly Christmas</li>
                             <li>Feliz Navidad</li>
                         </ul>
                     </div>
 
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-ts-red" data-aos="zoom-in" data-aos-delay="200">
-                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center"><i class="fas fa-music mr-3 text-ts-green"></i> Stijlvolle Crooners</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ts-red" data-aos="zoom-in" data-aos-delay="200" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23f0f0f0\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm-4 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center"><i class="fas fa-microphone-alt mr-3 text-ts-green"></i> Stijlvolle Crooners</h3>
                         <ul class="text-gray-700 space-y-1 text-sm">
                             <li>You Raise Me Up</li>
                             <li>Ain't That a Kick in the Head</li>
                             <li>New York, New York</li>
                             <li>Fly Me to the Moon</li>
-                            <li>Lucky Lips</li>
+                            <li>That's Amore</li>
+                            <li>Sway</li>
+                            <li>Mack the Knife</li>
                             <li>Quando Quando Quando</li>
                             <li>Sexbomb</li>
                         </ul>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-ts-red" data-aos="zoom-in" data-aos-delay="300">
-                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center"><i class="fas fa-flag-nl mr-3 text-ts-green"></i> Populaire Nederlandstalig</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 border-t-4 border-ts-red relative" data-aos="zoom-in" data-aos-delay="300" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23f0f0f0\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm-4 4v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+                        <span class="absolute top-0 right-0 bg-ts-red text-white text-xs font-bold px-3 py-1 rounded-bl-lg">NIEUW</span>
+                        <h3 class="text-2xl font-serif font-bold mb-4 text-ts-dark flex items-center">
+                            <div class="mr-3 flex-shrink-0">
+                                <span class="block h-1.5 w-5 bg-ts-red rounded-t-sm"></span>
+                                <span class="block h-1.5 w-5 bg-white"></span>
+                                <span class="block h-1.5 w-5 bg-ts-blue rounded-b-sm"></span>
+                            </div>
+                            Nederlandstalig</h3>
                         <ul class="text-gray-700 space-y-1 text-sm">
                             <li>Terug in de tijd (Yves Beerendse)</li>
                             <li>Ik kan het niet alleen (De Dijk)</li>
@@ -290,18 +318,31 @@
                     <p class="text-center text-gray-300 mb-8">Wij reageren binnen 2 uur. Boek tijdig, december is snel volgeboekt!</p>
                     
                     <form action="#" method="POST" class="space-y-4">
-                        <input type="text" placeholder="Uw Naam *" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
-                        <input type="email" placeholder="Uw E-mailadres *" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
-                        <input type="date" placeholder="Datum Optreden *" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
+                        <div>
+                            <label for="name" class="sr-only">Uw Naam</label>
+                            <input type="text" id="name" name="name" placeholder="Uw Naam *" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only">Uw E-mailadres</label>
+                            <input type="email" id="email" name="email" placeholder="Uw E-mailadres *" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
+                        </div>
+                        <div>
+                            <label for="date" class="sr-only">Datum Optreden</label>
+                            <input type="date" id="date" name="date" required class="w-full p-3 rounded bg-gray-700 border-gray-600 text-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200" title="Kies de datum van het optreden">
+                        </div>
                         
-                        <select class="w-full p-3 rounded bg-gray-700 border-gray-600 text-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
-                            <option>-- Kies Kerstpakket --</option>
-                            <option value="Standaard">Standaard Pakket (2x30 min) - €595</option>
-                            <option value="Uitgebreid">Uitgebreid Pakket (3x30 min) - €695</option>
-                            <option value="Premium">Premium Pakket (4x30 min) - €795</option>
-                        </select>
+                        <div>
+                            <label for="package" class="sr-only">Kies Kerstpakket</label>
+                            <select id="package" name="package" class="w-full p-3 rounded bg-gray-700 border-gray-600 text-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200">
+                                <option>-- Kies Kerstpakket --</option>
+                                <option value="Standaard">Standaard Pakket (2x30 min) - €595</option>
+                                <option value="Uitgebreid">Uitgebreid Pakket (3x30 min) - €695</option>
+                                <option value="Premium">Premium Pakket (4x30 min) - €795</option>
+                            </select>
+                        </div>
                         
-                        <textarea placeholder="Type Evenement (Kerstborrel, Bedrijfsfeest, etc.)" rows="3" class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200"></textarea>
+                        <label for="message" class="sr-only">Type Evenement en opmerkingen</label>
+                        <textarea id="message" name="message" placeholder="Type Evenement (Kerstborrel, Bedrijfsfeest, etc.) en eventuele opmerkingen" rows="3" class="w-full p-3 rounded bg-gray-700 border-gray-600 text-white placeholder-gray-400 focus:ring-ts-gold focus:border-ts-gold transition duration-200"></textarea>
 
                         <button type="submit" class="w-full bg-ts-red text-white font-bold text-lg p-3 rounded-lg hover:bg-ts-dark transition duration-500 transform hover:scale-[1.01] shadow-xl">
                             Verstuur Offerte Aanvraag
@@ -344,12 +385,38 @@
             </div>
         </footer>
     
+    <script>
+        // Dropdown menu functionality
+        const dropdownButton = document.getElementById('dropdownButton');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        if (dropdownButton && dropdownMenu) {
+            dropdownButton.addEventListener('click', function(event) {
+                event.stopPropagation(); // Prevent the document click listener from immediately closing it
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', function(event) {
+                if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             once: true,
             mirror: false
         });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
     </script>
 </body>
 </html>
