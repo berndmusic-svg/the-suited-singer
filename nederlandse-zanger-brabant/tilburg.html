@@ -173,6 +173,109 @@
   }
 }
 </script>
+
+<!-- Breadcrumb Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://thesuitedsinger.nl/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Nederlandse Zanger",
+      "item": "https://thesuitedsinger.nl/nederlandse-zanger-brabant/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Zanger Tilburg",
+      "item": "https://thesuitedsinger.nl/nederlandse-zanger-brabant/tilburg.html"
+    }
+  ]
+}
+</script>
+
+<!-- FAQ Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoeveel kost een zanger boeken in Tilburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Suited Singer biedt flexibele pakketten voor Tilburg: Pakket M (2×30 min) €595, Pakket L (3×30 min) €695, Pakket XL (4×30 min) €795. Alle pakketten inclusief professionele geluid- en lichtinstallatie. Maatwerk opstellingen zijn ook mogelijk."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Waar kan de zanger optreden in Tilburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Suited Singer treedt op bij bruiloften, bedrijfsfeesten, jubilea, verjaardag feesten en andere evenementen in Tilburg. Hij heeft ervaring met optredens in locaties als 013 Poppodium, de Koepelhal en Stadsschouwburg Tilburg, maar ook kleinere gelegenheden en privéfeesten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is het repertoire van de zanger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Suited Singer beschikt over een gevarieerd repertoire inclusief crooners en oldies (Fly Me to the Moon, New York New York), allround hits (Crazy Little Thing Called Love), Nederlandstalige meezingers, feestelijke dansnummers en optioneel kerstrepertoire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik de setlist aanpassen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! The Suited Singer past elk optreden aan jouw wensen aan. Elke setlist wordt aangepast aan jouw voorkeur en het publiek. Je kunt speciale verzoeknummers indienen en hij werkt dit naadloos in het optreden in."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wat is de all-in service?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De all-in service van The Suited Singer omvat professionele geluidsinstallatie, sfeervolle lichtshow, stijlvol podiummateriaal en volledige technische ondersteuning. Dit is inbegrepen in alle pakketten voor events tot 150 personen."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hoe boek ik The Suited Singer voor mijn event in Tilburg?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Je kunt vrijblijvend een offerte aanvragen via het contactformulier op deze pagina. Vul je gegevens in, selecteer je gewenste pakket en eventuele extra's. Je ontvangt binnen 24 uur een reactie. Je kunt ook bellen naar +31 6 41268405 of mailen naar boeking@thesuitedsinger.nl."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ik een saxophonist toevoegen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Voeg een professionele saxophonist toe voor jazzy sax en extra sfeer en sophisticatie. Ideaal voor bruiloften en feesten in Tilburg. Prijs: €475+"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Bieden jullie een photo booth?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja! Wij bieden een interactieve photo booth waarmee je gasten grappige en mooie herinneringen kunnen maken. De booth heeft LED-verlichting en instant prints. Prijs op aanvraag."
+      }
+    }
+  ]
+}
+</script>
+
 </head>
 <body class="bg-gray-50 font-sans antialiased">
 
@@ -208,7 +311,7 @@
 
        <section id="hero" class="relative bg-ts-black h-[90vh] flex items-center justify-start overflow-hidden">
        <div class="absolute inset-0 bg-cover bg-center opacity-60 transition duration-500"
-           style="background-image: url('../images/The_suited_singer_4.jpg');">
+           style="background-image: url('../images/The_suited_singer_4.jpg');" role="img" aria-label="The Suited Singer live optreden achtergrond - professionele entertainment voor Tilburg">
         </div>
         <div class="absolute inset-0 bg-gradient-to-t from-ts-black/90 via-ts-black/70 to-transparent opacity-80"></div>
         <div class="relative z-10 text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-right" data-aos-duration="1000">
@@ -240,7 +343,7 @@
         <!-- Image of The Suited Singer -->
         <section class="mb-12">
             <div class="max-w-5xl mx-auto">
-                <img src="../images/The_Suited_Singer_9.png" alt="The Suited Singer performs live on stage" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                <img src="../images/The_Suited_Singer_9.png" alt="The Suited Singer live optreden in Tilburg - professionele zanger voor bruiloften en evenementen" class="rounded-lg shadow-xl w-full h-auto object-cover">
             </div>
         </section>
 
@@ -396,7 +499,7 @@
                     <!-- Optionele Lichtset -->
                     <div class="bg-white rounded-lg shadow-2xl p-6 border-t-4 border-ts-gold">
                         <div class="text-center mb-4">
-                            <img src="../images/shwobar_verhuur_1.png" alt="Professionele lichtset voor evenementen" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/shwobar_verhuur_1.png', 'Professionele lichtset voor evenementen')">
+                            <img src="../images/shwobar_verhuur_1.png" alt="Extra lichtset verhuur Tilburg - professionele LED verlichting en effecten voor feesten" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/shwobar_verhuur_1.png', 'Extra lichtset verhuur Tilburg - professionele LED verlichting')">
                         </div>
                         <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Extra Lichtset</h4>
                         <p class="text-gray-700 mb-4 text-center">Voor een nog spectaculairdere ambiance met extra LED-verlichting en effecten.</p>
@@ -409,11 +512,37 @@
                     <!-- Disco LED Vloer -->
                     <div class="bg-white rounded-lg shadow-2xl p-6 border-t-4 border-ts-gold">
                         <div class="text-center mb-4">
-                            <img src="../images/ledvloer.png" alt="Disco LED vloer voor evenementen" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/ledvloer.png', 'Disco LED vloer voor evenementen')">
+                            <img src="../images/ledvloer.png" alt="Disco LED dansvloer Tilburg - interactieve lichteffecten voor bruiloften en feesten" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/ledvloer.png', 'Disco LED dansvloer Tilburg')">
                         </div>
                         <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Disco LED Vloer</h4>
                         <p class="text-gray-700 mb-4 text-center">Creëer een unieke dansvloer met kleurrijke LED-effecten voor uw feest.</p>
                         <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">Prijs op aanvraag</p>
+                        <div class="text-center">
+                            <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Informeer</a>
+                        </div>
+                    </div>
+
+                    <!-- Saxophonist -->
+                    <div class="bg-white rounded-lg shadow-2xl p-6 border-t-4 border-ts-gold">
+                        <div class="text-center mb-4">
+                            <img src="../images/saxophonist.jpg" alt="Saxophonist voor evenementen in Tilburg - jazzy sax" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/saxophonist.jpg', 'Saxophonist voor evenementen')">
+                        </div>
+                        <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Saxophonist</h4>
+                        <p class="text-gray-700 mb-4 text-center">Jazzy sax voor extra sfeer en sophisticatie. Voeg een professionele saxophonist toe voor nog meer musical power en elegantie aan je event.</p>
+                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">€475+</p>
+                        <div class="text-center">
+                            <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Voeg Toe</a>
+                        </div>
+                    </div>
+
+                    <!-- Photo Booth -->
+                    <div class="bg-white rounded-lg shadow-2xl p-6 border-t-4 border-ts-gold">
+                        <div class="text-center mb-4">
+                            <img src="../images/photobooth.jpg" alt="Photobooth voor evenementen in Tilburg - interactieve foto's" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/photobooth.jpg', 'Photobooth voor evenementen')">
+                        </div>
+                        <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Photobooth</h4>
+                        <p class="text-gray-700 mb-4 text-center">Interactieve foto's voor je gasten. Maak grappige en mooie herinneringen met onze professionele photo booth met LED-verlichting en instant prints.</p>
+                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">Op aanvraag</p>
                         <div class="text-center">
                             <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Informeer</a>
                         </div>
@@ -505,6 +634,14 @@
                         <label class="flex items-center">
                             <input type="checkbox" name="led_disco_vloer" value="ja" class="mr-2">
                             Led Disco Vloer (prijs op aanvraag)
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="saxophonist" value="ja" class="mr-2">
+                            Saxophonist (€475+)
+                        </label>
+                        <label class="flex items-center">
+                            <input type="checkbox" name="photobooth" value="ja" class="mr-2">
+                            Photobooth (op aanvraag)
                         </label>
                     </div>
                 </div>
