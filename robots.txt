@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.thesuitedsinger.nl/sitemap.xml
+# Point to the canonical domain
+Sitemap: https://thesuitedsinger.nl/sitemap.xml

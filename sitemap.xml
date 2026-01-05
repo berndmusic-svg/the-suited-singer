@@ -1,18 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
-    <loc>https://www.thesuitedsinger.nl/index.html</loc>
-    <lastmod>2025-12-11</lastmod>
+    <loc>https://thesuitedsinger.nl/</loc>
+    <lastmod>2025-12-18</lastmod>
     <priority>1.00</priority>
   </url>
+  
+  <!-- Service Pages -->
   <url>
-    <loc>https://www.thesuitedsinger.nl/repertoire.html</loc>
-    <lastmod>2025-12-11</lastmod>
+    <loc>https://thesuitedsinger.nl/huwelijk.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/zorg.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/thechristmassinger.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/diensten.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- Blog Hub & Articles -->
+  <url>
+    <loc>https://thesuitedsinger.nl/blog.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-huwelijkszanger-7-vragen.html</loc>
+    <lastmod>2025-12-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://www.thesuitedsinger.nl/thechristmassinger.html</loc>
-    <lastmod>2025-12-11</lastmod>
+    <loc>https://thesuitedsinger.nl/blog-kerstzanger-gids.html</loc>
+    <lastmod>2025-12-18</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-zorgentertainment.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-dj-vs-zanger.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-wat-kost-live-zanger.html</loc>
+    <lastmod>2025-06-18</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-gouden-bruiloft.html</loc>
+    <lastmod>2024-12-10</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog-dag-zanger.html</loc>
+    <lastmod>2024-11-08</lastmod>
+    <priority>0.75</priority>
+  </url>
+  
+  <!-- Other Main Pages -->
+  <url>
+    <loc>https://thesuitedsinger.nl/repertoire.html</loc>
+    <lastmod>2025-12-16</lastmod>
+    <priority>0.80</priority>
+  </url>
+  
+  <!-- Dutch City Pages (Local SEO) -->
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/breda.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/den-bosch.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/tilburg.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/eindhoven.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/roosendaal.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/bergen-op-zoom.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/etten-leur.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oosterhout.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/waalwijk.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/heusden.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/vught.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/boxtel.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oisterwijk.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/moergestel.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oss.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/veldhoven.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/helmond.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/kaatsheuvel.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/uden.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/veghel.html</loc>
+    <lastmod>2025-12-18</lastmod>
+    <priority>0.70</priority>
   </url>
 </urlset>
