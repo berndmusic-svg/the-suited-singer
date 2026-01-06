@@ -78,34 +78,7 @@
 </head>
 <body class="bg-gray-100 font-sans antialiased">
 
-    <header class="bg-ts-dark shadow-2xl sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-serif text-ts-gold tracking-wider font-bold">
-                The Suited Singer
-            </a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="repertoire.html" class="text-white hover:text-ts-gold transition duration-500">Repertoire</a> 
-                <div class="relative group">
-                    <a id="dropdownButton" class="text-white hover:text-ts-gold transition duration-500 cursor-pointer flex items-center">
-                        Diensten
-                        <i class="fas fa-chevron-down ml-2 text-xs"></i>
-                    </a>
-                    <div id="dropdownMenu" class="absolute hidden bg-ts-dark shadow-lg rounded-md py-2 w-48 mt-2 space-y-1 z-50">
-                        <a href="huwelijk.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Huwelijk</a>
-                        <a href="zorg.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Zorgentertainment</a>
-                        <a href="thechristmassinger.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">The Christmas Singer</a>
-                    </div>
-                </div>
-                <a href="blog.html" class="text-ts-gold border-b-2 border-ts-gold transition duration-500">Blog</a>
-                <a href="index.html#contact" class="bg-ts-gold text-ts-dark font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-500 shadow-xl">
-                    Boek Nu!
-                </a>
-            </div>
-            <button class="md:hidden text-white text-xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
+    <div id="site-header"></div>
 
     <main>
         <section id="hero" class="relative bg-ts-black min-h-[60vh] flex items-center justify-center overflow-hidden py-16 md:py-0">
@@ -296,28 +269,16 @@
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Dropdown menu functionality
-        const dropdownButton = document.getElementById('dropdownButton');
-        const dropdownMenu = document.getElementById('dropdownMenu');
-
-        if (dropdownButton && dropdownMenu) {
-            dropdownButton.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent the document click listener from immediately closing it
-                dropdownMenu.classList.toggle('hidden');
-            });
-
-            document.addEventListener('click', function(event) {
-                if (!dropdownMenu.contains(event.target) && !dropdownButton.contains(event.target)) {
-                    dropdownMenu.classList.add('hidden');
-                }
-            });
-        }
-    </script>
-    <script>
         AOS.init({
             once: true,
             mirror: false
         });
     </script>
+
+    <!-- Centralized Footer -->
+    <div id="site-footer"></div>
+
+    <!-- Include Header/Footer Script -->
+    <script src="/assets/js/includes.js" defer></script>
 </body>
 </html>
