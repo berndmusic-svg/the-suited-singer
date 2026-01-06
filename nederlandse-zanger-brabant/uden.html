@@ -91,35 +91,7 @@
 </head>
 <body class="bg-gray-50 font-sans antialiased">
 
-    <header class="bg-ts-dark shadow-2xl sticky top-0 z-50">
-        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="../index.html" class="text-3xl font-serif text-ts-gold tracking-wider font-bold">
-                The Suited Singer
-            </a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="../repertoire.html" class="text-white hover:text-ts-gold transition duration-500">Repertoire</a>
-                <div class="relative group">
-                    <a id="dropdownButton" class="text-white hover:text-ts-gold transition duration-500 cursor-pointer flex items-center">
-                        Diensten
-                        <i class="fas fa-chevron-down ml-2 text-xs"></i>
-                    </a>
-                    <div id="dropdownMenu" class="absolute hidden bg-ts-dark shadow-lg rounded-md py-2 w-48 mt-2 space-y-1 z-50">
-                        <a href="../huwelijk.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Huwelijk</a>
-                        <a href="../zorg.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Zorgentertainment</a>
-                        <a href="../thechristmassinger.html" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">The Christmas Singer</a>
-                    </div>
-                </div>
-                <a href="../blog.html" class="text-white hover:text-ts-gold transition duration-500">Blog</a>
-                <a href="#reviews" class="text-white hover:text-ts-gold transition duration-500">Reviews</a>
-                <a href="#contact" class="bg-ts-gold text-ts-dark font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-500 shadow-xl">
-                    Boek Nu!
-                </a>
-            </div>
-            <button class="md:hidden text-white text-xl">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    </header>
+    <div id="site-header"></div>
 
     <section id="hero" class="relative bg-ts-black h-[90vh] flex items-center justify-start overflow-hidden">
            <div class="absolute inset-0 bg-cover bg-center opacity-60 transition duration-500"
@@ -309,7 +281,7 @@
                         </div>
                         <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Extra Lichtset</h4>
                         <p class="text-gray-700 mb-4 text-center">Voor een nog spectaculairdere ambiance met extra LED-verlichting en effecten.</p>
-                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">€75 extra</p>
+                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">ï¿½75 extra</p>
                         <div class="text-center">
                             <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Voeg Toe</a>
                         </div>
@@ -321,7 +293,7 @@
                             <img src="../images/ledvloer.png" alt="Disco LED dansvloer Uden - interactieve lichteffecten voor bruiloften en feesten" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/ledvloer.png', 'Disco LED vloer voor evenementen')">
                         </div>
                         <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Disco LED Vloer</h4>
-                        <p class="text-gray-700 mb-4 text-center">Creëer een unieke dansvloer met kleurrijke LED-effecten voor uw feest.</p>
+                        <p class="text-gray-700 mb-4 text-center">Creï¿½er een unieke dansvloer met kleurrijke LED-effecten voor uw feest.</p>
                         <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">Prijs op aanvraag</p>
                         <div class="text-center">
                             <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Informeer</a>
@@ -331,11 +303,11 @@
                     <!-- Saxophonist -->
                     <div class="bg-white rounded-lg shadow-2xl p-6 border-t-4 border-ts-gold">
                         <div class="text-center mb-4">
-                            <img src="../images/saxophonist.jpg" alt="Saxophonist voor evenementen – sfeervolle sax" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/saxophonist.jpg', 'Saxophonist voor evenementen')">
+                            <img src="../images/saxophonist.jpg" alt="Saxophonist voor evenementen ï¿½ sfeervolle sax" class="rounded-lg shadow-lg max-w-full h-48 object-cover mx-auto cursor-pointer hover:opacity-80 transition duration-300" onclick="openModal('../images/saxophonist.jpg', 'Saxophonist voor evenementen')">
                         </div>
                         <h4 class="text-2xl font-serif font-bold text-ts-dark mb-4 text-center">Saxophonist</h4>
                         <p class="text-gray-700 mb-4 text-center">Sfeervolle live sax voor extra elegantie en klasse. Voeg een professionele saxophonist toe voor nog meer musical power en elegantie aan je event.</p>
-                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">€475+</p>
+                        <p class="text-3xl font-serif font-extrabold text-ts-gold text-center mb-4">ï¿½475+</p>
                         <div class="text-center">
                             <a href="#contact-form" class="inline-block bg-ts-gold text-ts-dark font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300">Voeg Toe</a>
                         </div>
@@ -534,6 +506,8 @@
             }
         });
     </script>
+    <div id="site-footer"></div>
+    <script src="/assets/js/includes.js" defer></script>
 </body>
 </html>
 
