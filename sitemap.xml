@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- Homepage -->
   <url>
     <loc>https://thesuitedsinger.nl/</loc>
     <lastmod>2026-01-09</lastmod>
@@ -98,7 +98,7 @@
     <priority>0.85</priority>
   </url>
   
-  <!-- Location Pages (Top Markets) -->
+  <!-- Location Pages (Dutch Cities) -->
   <url>
     <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/breda/</loc>
     <lastmod>2026-01-09</lastmod>
@@ -131,6 +131,71 @@
   </url>
   <url>
     <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oss/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/bergen-op-zoom/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/etten-leur/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oosterhout/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/waalwijk/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/heusden/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/vught/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/boxtel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oisterwijk/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/moergestel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/kaatsheuvel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/uden/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/veldhoven/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/veghel/</loc>
     <lastmod>2026-01-09</lastmod>
     <priority>0.65</priority>
   </url>
