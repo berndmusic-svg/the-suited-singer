@@ -111,121 +111,163 @@
             </div>
         </section>
 
-        <!-- Muziekmomenten Section -->
-        <section class="py-24 bg-white">
+        <!-- Muziekmomenten Die Blijven Hangen -->
+        <section class="py-24 bg-gradient-to-b from-amber-50 to-amber-100/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Muziekmomenten Die Blijven Hangen</h2>
-                <p class="text-center text-gray-600 mb-20 max-w-2xl mx-auto" data-aos="fade-in">Vier aparte momenten om jullie dag muzikaal in te vullen</p>
+                <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto" data-aos="fade-in">Vier aparte momenten om jullie dag muzikaal in te vullen</p>
                 
-                <!-- Moment 1: Image Right -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-                    <div data-aos="fade-up">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 border-l-4 border-ts-gold pl-4"><i class="fas fa-church text-ts-gold mr-3"></i>Ceremonie</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">Een persoonlijke openingskeuze, je favoriete nummers tijdens het wachten en intrede, en een emotioneel moment na de geloften. Ik voelaan wanneer het moment passend is voor muziek.</p>
-                    </div>
-                    <div class="h-96 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/huwelijk_2.jpg');"></div>
+                <!-- Tabbladen knoppen -->
+                <div class="flex flex-wrap gap-4 mb-12 justify-center">
+                    <button onclick="showTab(event, 'tab-ceremonie')" class="tab-btn px-6 py-3 rounded-lg bg-ts-gold text-ts-dark font-semibold hover:bg-yellow-400 transition duration-300 active">
+                        <i class="fas fa-church mr-2"></i>Ceremonie
+                    </button>
+                    <button onclick="showTab(event, 'tab-borrel')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-ts-dark font-semibold hover:bg-gray-300 transition duration-300">
+                        <i class="fas fa-glass-cheers mr-2"></i>Borrel & Diner
+                    </button>
+                    <button onclick="showTab(event, 'tab-dans')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-ts-dark font-semibold hover:bg-gray-300 transition duration-300">
+                        <i class="fas fa-music mr-2"></i>Eerste Dans
+                    </button>
+                    <button onclick="showTab(event, 'tab-feest')" class="tab-btn px-6 py-3 rounded-lg bg-gray-200 text-ts-dark font-semibold hover:bg-gray-300 transition duration-300">
+                        <i class="fas fa-ring mr-2"></i>Feest
+                    </button>
                 </div>
 
-                <!-- Moment 2: Image Left -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-                    <div class="h-96 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/huwelijk_3.jpg');"></div>
-                    <div data-aos="fade-up">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 border-l-4 border-ts-gold pl-4"><i class="fas fa-glass-cheers text-ts-gold mr-3"></i>Borrel & Diner</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">Ontspannen, sfeervol. Niemand hoeft stil te zijn — ik zorg voor zachte achtergrondmuziek terwijl jullie genieten. Perfecte balans tussen aanwezigheid en ruimte.</p>
+                <!-- Content Ceremonie -->
+                <div id="tab-ceremonie" class="tab-content block">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4">Ceremonie</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">Een persoonlijke openingskeuze, je favoriete nummers tijdens het wachten en intrede, en een emotioneel moment na de geloften. Ik voelaan wanneer het moment passend is voor muziek.</p>
+                        </div>
+                        <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/huwelijk_2.jpg');"></div>
                     </div>
                 </div>
 
-                <!-- Moment 3: Image Right -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
-                    <div data-aos="fade-up">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 border-l-4 border-ts-gold pl-4"><i class="fas fa-music text-ts-gold mr-3"></i>Eerste Dans & Opwarmers</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">Een emotioneel moment voor jullie eerste dans, gevolgd door upbeats nummers om gasten naar de dansvloer te krijgen. Ik voelaan het moment om de energie op te voeren.</p>
+                <!-- Content Borrel & Diner -->
+                <div id="tab-borrel" class="tab-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4">Borrel & Diner</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">Ontspannen, sfeervol. Niemand hoeft stil te zijn — ik zorg voor zachte achtergrondmuziek terwijl jullie genieten. Perfecte balans tussen aanwezigheid en ruimte.</p>
+                        </div>
+                        <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/huwelijk_3.jpg');"></div>
                     </div>
-                    <div class="h-96 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/blog_bruiloft.jpg');"></div>
                 </div>
 
-                <!-- Moment 4: Image Left -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="h-96 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/Stage_Set_suitedsinger_2.avif');"></div>
-                    <div data-aos="fade-up">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 border-l-4 border-ts-gold pl-4"><i class="fas fa-ring text-ts-gold mr-3"></i>Feest & Dansenergie</h3>
-                        <p class="text-gray-700 text-lg leading-relaxed">Energieke covers, meezingers en hits. Ik lees de dansvloer en zorg dat het feest gaande blijft. Gasten willen zingen, dansen en het moment meemaken — en dat maak ik perfect.</p>
+                <!-- Content Eerste Dans -->
+                <div id="tab-dans" class="tab-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4">Eerste Dans & Opwarmers</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">Een emotioneel moment voor jullie eerste dans, gevolgd door upbeats nummers om gasten naar de dansvloer te krijgen. Ik voelaan het moment om de energie op te voeren.</p>
+                        </div>
+                        <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/blog_bruiloft.jpg');"></div>
                     </div>
                 </div>
+
+                <!-- Content Feest -->
+                <div id="tab-feest" class="tab-content hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4">Feest & Dansenergie</h3>
+                            <p class="text-gray-700 text-lg leading-relaxed">Energieke covers, meezingers en hits. Ik lees de dansvloer en zorg dat het feest gaande blijft. Gasten willen zingen, dansen en het moment meemaken — en dat maak ik perfect.</p>
+                        </div>
+                        <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl" style="background-image: url('images/Stage_Set_suitedsinger_2.avif');"></div>
+                    </div>
+                </div>
+
+                <script>
+                    function showTab(evt, tabName) {
+                        // Verberg alle tab-content
+                        const contents = document.querySelectorAll('.tab-content');
+                        contents.forEach(content => content.classList.add('hidden'));
+                        
+                        // Verwijder 'active' class van alle buttons
+                        const buttons = document.querySelectorAll('.tab-btn');
+                        buttons.forEach(btn => {
+                            btn.classList.remove('bg-ts-gold', 'text-ts-dark');
+                            btn.classList.add('bg-gray-200', 'text-ts-dark');
+                        });
+                        
+                        // Toon de geselecteerde tab
+                        document.getElementById(tabName).classList.remove('hidden');
+                        
+                        // Maak de geklikte button actief
+                        evt.currentTarget.classList.remove('bg-gray-200');
+                        evt.currentTarget.classList.add('bg-ts-gold');
+                    }
+                </script>
             </div>
         </section>
 
         <!-- Waarom The Suited Singer -->
         <section class="py-24 bg-gradient-to-br from-ts-dark via-gray-900 to-ts-black">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold text-center mb-16" data-aos="fade-in">Waarom bruidsparen voor The Suited Singer kiezen</h2>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold text-center mb-12" data-aos="fade-in">Waarom bruidsparen voor The Suited Singer kiezen</h2>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-                    <!-- Reasons: 2 columns -->
-                    <div class="md:col-span-2 space-y-8" data-aos="fade-right">
-                        <div class="flex items-start gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Reasons: Left column -->
+                    <div class="space-y-6" data-aos="fade-right">
+                        <div class="flex items-start gap-3">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold text-ts-dark font-bold">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-ts-gold text-ts-dark font-bold text-sm">
                                     <i class="fas fa-user-tie"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 class="text-xl font-serif font-bold text-white mb-2">Altijd in pak, altijd stijlvol</h3>
-                                <p class="text-gray-300">Consistente uitstraling die past bij elke bruiloft. Professioneel en elegant.</p>
+                                <h3 class="text-lg font-serif font-bold text-white mb-1">Altijd in pak, altijd stijlvol</h3>
+                                <p class="text-gray-300 text-sm">Consistente uitstraling die past bij elke bruiloft. Professioneel en elegant.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div class="flex items-start gap-3">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold text-ts-dark font-bold">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-ts-gold text-ts-dark font-bold text-sm">
                                     <i class="fas fa-exchange-alt"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 class="text-xl font-serif font-bold text-white mb-2">Flexibel & voelend</h3>
-                                <p class="text-gray-300">Ik pasvocaal en muzikaal aan op de dag. Wanneer meer energie nodig is, lever ik die.</p>
+                                <h3 class="text-lg font-serif font-bold text-white mb-1">Flexibel & voelend</h3>
+                                <p class="text-gray-300 text-sm">Ik pasvocaal en muzikaal aan op de dag. Wanneer meer energie nodig is, lever ik die.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div class="flex items-start gap-3">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold text-ts-dark font-bold">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-ts-gold text-ts-dark font-bold text-sm">
                                     <i class="fas fa-comments"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 class="text-xl font-serif font-bold text-white mb-2">Persoonlijke voorbereiding</h3>
-                                <p class="text-gray-300">Uitgebreid contact vooraf. Jouw smaak, jouw verhaal, jouw tempo bepaalt alles.</p>
+                                <h3 class="text-lg font-serif font-bold text-white mb-1">Persoonlijke voorbereiding</h3>
+                                <p class="text-gray-300 text-sm">Uitgebreid contact vooraf. Jouw smaak, jouw verhaal, jouw tempo bepaalt alles.</p>
                             </div>
                         </div>
 
-                        <div class="flex items-start gap-4">
+                        <div class="flex items-start gap-3">
                             <div class="flex-shrink-0">
-                                <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold text-ts-dark font-bold">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-full bg-ts-gold text-ts-dark font-bold text-sm">
                                     <i class="fas fa-star"></i>
                                 </div>
                             </div>
                             <div>
-                                <h3 class="text-xl font-serif font-bold text-white mb-2">47+ bruidsparen vertrouwen me</h3>
-                                <p class="text-gray-300">9.4★ gemiddeld. De reviews spreken voor zichzelf — ik maak het verschil.</p>
+                                <h3 class="text-lg font-serif font-bold text-white mb-1">47+ bruidsparen vertrouwen me</h3>
+                                <p class="text-gray-300 text-sm">9.4★ gemiddeld. De reviews spreken voor zichzelf — ik maak het verschil.</p>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Photos Section: 1 column -->
-                    <div class="md:col-span-1 space-y-6" data-aos="fade-left">
-                        <div class="h-64 bg-cover bg-center rounded-2xl shadow-2xl border-l-4 border-ts-gold" style="background-image: url('images/impression_image_2.jpg');"></div>
-                        <div class="h-64 bg-cover bg-center rounded-2xl shadow-2xl border-l-4 border-ts-gold" style="background-image: url('images/impression_image_4.jpg');"></div>
-                    </div>
+                    <!-- Photo: Right column -->
+                    <div class="h-80 bg-cover bg-center rounded-3xl shadow-2xl" data-aos="fade-left" style="background-image: url('images/The_Suited_Singer_9.png');"></div>
                 </div>
             </div>
         </section>
 
         <!-- Ervaringen -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-gradient-to-b from-ts-dark to-ts-dark/95">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Wat Bruidsparen Zeggen</h2>
-                <p class="text-center text-gray-600 mb-20 max-w-2xl mx-auto" data-aos="fade-in">47 bruidsparen, gemiddeld 9.4/10 sterren</p>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold text-center mb-4" data-aos="fade-in">Wat Bruidsparen Zeggen</h2>
+                <p class="text-center text-gray-300 mb-20 max-w-2xl mx-auto" data-aos="fade-in">47 bruidsparen, gemiddeld 9.4/10 sterren</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
                     <!-- Review 1 -->
@@ -268,14 +310,14 @@
         </section>
 
         <!-- Praktisch & Zorgeloos -->
-        <section class="py-24 bg-gradient-to-b from-gray-50 to-white">
+        <section class="py-24 bg-gradient-to-b from-amber-950/20 to-amber-900/10">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Zorgeloos Geregeld</h2>
-                <p class="text-center text-gray-600 mb-20 max-w-2xl mx-auto" data-aos="fade-in">Vier stappen die jullie zorgen wegnemen.</p>
+                <p class="text-center text-gray-700 mb-20 max-w-2xl mx-auto" data-aos="fade-in">Vier stappen die jullie zorgen wegnemen.</p>
                 
-                <!-- Step 1 & 2: Text Left, Image Right -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16 items-center">
-                    <div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <!-- Steps: Left column -->
+                    <div class="space-y-8" data-aos="fade-right">
                         <div class="mb-12" data-aos="fade-up">
                             <div class="flex items-start gap-4">
                                 <div class="flex-shrink-0">
@@ -299,15 +341,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl border-l-4 border-ts-gold" style="background-image: url('images/impression_image_4.jpg');"></div>
-                </div>
 
-                <!-- Step 3 & 4: Image Left, Text Right -->
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div class="h-80 bg-cover bg-center rounded-2xl shadow-2xl border-l-4 border-ts-gold" style="background-image: url('images/impression_image_2.jpg');"></div>
-                    <div>
-                        <div class="mb-12" data-aos="fade-up">
+                        <div data-aos="fade-up" data-aos-delay="200">
                             <div class="flex items-start gap-4">
                                 <div class="flex-shrink-0">
                                     <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold/20 text-ts-gold font-bold">3</div>
@@ -319,7 +354,7 @@
                             </div>
                         </div>
 
-                        <div data-aos="fade-up" data-aos-delay="100">
+                        <div data-aos="fade-up" data-aos-delay="300">
                             <div class="flex items-start gap-4">
                                 <div class="flex-shrink-0">
                                     <div class="flex items-center justify-center h-12 w-12 rounded-full bg-ts-gold/20 text-ts-gold font-bold">4</div>
@@ -331,19 +366,21 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Photo: Right column -->
+                    <div class="h-96 bg-cover bg-center rounded-2xl shadow-2xl border-l-4 border-ts-gold" data-aos="fade-left" style="background-image: url('images/impression_image_2.jpg');"></div>
                 </div>
             </div>
         </section>
 
         <!-- Repertoire Section -->
-        <section class="py-24 bg-white">
+        <section class="py-24 bg-gradient-to-b from-ts-dark to-ts-dark/95">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
                     <div data-aos="fade-up">
-                        <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark mb-4" data-aos="fade-in">Repertoire (NL & EN)</h2>
-                        <p class="text-gray-600 mb-6 text-lg" data-aos="fade-in">Van Engelstalige classics en pop tot Nederlandstalige hits en meezingers: het repertoire is breed en flexibel. We stemmen vooraf af wat jullie wél en niet willen, zodat de muziek perfect aansluit op jullie dag.</p>
+                        <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-4" data-aos="fade-in">Repertoire (NL & EN)</h2>
+                        <p class="text-gray-300 mb-6 text-lg" data-aos="fade-in">Van Engelstalige classics en pop tot Nederlandstalige hits en meezingers: het repertoire is breed en flexibel. We stemmen vooraf af wat jullie wél en niet willen, zodat de muziek perfect aansluit op jullie dag.</p>
                         
-                        <p class="text-gray-700 mb-8 italic">Nog twijfels? Lees het artikel <a href="blog-huwelijkszanger-7-vragen.html" class="text-ts-gold hover:text-yellow-400 font-semibold">7 Vragen Over Een Huwelijkszanger</a> — dit beantwoordt veel vragen!</p>
+                        <p class="text-gray-400 mb-8 italic">Nog twijfels? Lees het artikel <a href="blog-huwelijkszanger-7-vragen.html" class="text-ts-gold hover:text-yellow-400 font-semibold">7 Vragen Over Een Huwelijkszanger</a> — dit beantwoordt veel vragen!</p>
                         
                         <div class="text-left">
                             <a href="repertoire.html" class="inline-flex items-center px-8 py-4 bg-ts-gold text-ts-dark font-bold rounded-lg hover:bg-yellow-400 transition duration-300">
@@ -351,125 +388,55 @@
                             </a>
                         </div>
                     </div>
-                    <div class="h-[500px] bg-cover bg-center rounded-2xl shadow-2xl" data-aos="fade-up" style="background-image: url('images/thes_suited_singer_13.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
+                    <div class="h-[500px] bg-cover bg-center rounded-3xl shadow-2xl opacity-90 hover:opacity-100 transition duration-300" data-aos="fade-up" style="background-image: url('images/thes_suited_singer_13.jpg'); background-size: contain; background-position: center; background-repeat: no-repeat; background-color: rgba(0,0,0,0.3);"></div>
                 </div>
             </div>
         </section>
 
-        <!-- Pakketten -->
-        <section class="py-24 bg-gray-50">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Duidelijke Pakketten</h2>
-                <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto" data-aos="fade-in">Alle-in met geluid, licht en voorbereiding. Flexibel aanpasbaar naar jullie wensen.</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 text-center">Ceremonie</h3>
-                        <p class="text-lg text-gray-600 mb-2 text-center font-semibold">1 × 30 minuten</p>
-                        <p class="text-5xl font-serif font-extrabold text-ts-gold mb-2 text-center">€395</p>
-                        <p class="text-sm text-gray-500 mb-6 text-center">Geluid & licht inbegrepen</p>
-                        <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Intrede & geloften</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Soundcheck ter plaatse</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Setlist op maat</li>
-                        </ul>
-                        <div class="text-center">
-                            <a href="#contact" class="inline-block bg-ts-dark text-ts-gold font-bold py-3 px-6 rounded-lg hover:bg-ts-black transition duration-300">Meer Info</a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-2xl shadow-2xl relative transform scale-105 hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="100">
-                        <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-ts-gold text-ts-dark text-xs font-bold px-4 py-2 rounded-full">⭐ POPULAIR</div>
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 text-center">Bruiloft Compleet</h3>
-                        <p class="text-lg text-gray-600 mb-2 text-center font-semibold">3 × 30 minuten</p>
-                        <p class="text-5xl font-serif font-extrabold text-ts-gold mb-2 text-center">€795</p>
-                        <p class="text-sm text-gray-500 mb-6 text-center">Geluid & licht inbegrepen</p>
-                        <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Ceremonie + borrel + feest</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Flexibele timing</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Volledige ondersteuning</li>
-                        </ul>
-                        <div class="text-center">
-                            <a href="#contact" class="inline-block bg-ts-gold text-ts-dark font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition duration-300">Kies Dit Pakket</a>
-                        </div>
-                    </div>
-
-                    <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300" data-aos="zoom-in" data-aos-delay="200">
-                        <h3 class="text-3xl font-serif font-bold text-ts-dark mb-4 text-center">Full Day</h3>
-                        <p class="text-lg text-gray-600 mb-2 text-center font-semibold">5 × 30 minuten</p>
-                        <p class="text-5xl font-serif font-extrabold text-ts-gold mb-2 text-center">€1.195</p>
-                        <p class="text-sm text-gray-500 mb-6 text-center">Geluid & licht inbegrepen</p>
-                        <ul class="text-sm text-gray-600 space-y-2 mb-6">
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Complete dag coverage</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Tot 5 aparte optredens</li>
-                            <li class="flex items-center"><i class="fas fa-check text-ts-gold mr-2"></i>Premium ondersteuning</li>
-                        </ul>
-                        <div class="text-center">
-                            <a href="#contact" class="inline-block bg-ts-dark text-ts-gold font-bold py-3 px-6 rounded-lg hover:bg-ts-black transition duration-300">Meer Info</a>
-                        </div>
-                    </div>
-                </div>
-
-                <p class="text-center text-gray-500 text-sm">Alle pakketten zijn flexibel aanpasbaar naar jullie wensen en schema.</p>
-            </div>
-        </section>
-
-        <!-- FAQ -->
-        <section class="py-24 bg-gray-50">
+        <!-- Veelgestelde Vragen -->
+        <section class="py-24 bg-gradient-to-b from-amber-50 to-amber-100/50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-16" data-aos="fade-in">Veelgestelde Vragen</h2>
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Veelgestelde Vragen</h2>
+                <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto" data-aos="fade-in">Veelgestelde Vragen</p>
                 
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-                    <!-- FAQ Items: 2 columns -->
-                    <div class="md:col-span-2 space-y-6">
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Is geluid en licht inbegrepen?</h3>
-                            <p class="text-gray-700 leading-relaxed">Ja, volledig. Alle pakketten zijn inclusief professionele geluidset en LED-sfeerverlichting. Geen verborgen kosten — je weet precies wat je krijgt.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Kunnen we lievelingsnummers aanvragen?</h3>
-                            <p class="text-gray-700 leading-relaxed">Zeker! Geef jullie lievelingsnummers, wensen en 'niet afspelen' nummers door. Ik bouw de setlist volledig op maat naar jullie smaak en bruikloft-timing.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Hoe lang duurt het optreden per blok?</h3>
-                            <p class="text-gray-700 leading-relaxed">Standaard blokken van 30 minuten. Het populaire Bruiloft Compleet pakket is 3 × 30 minuten: ceremonie, borrel/diner, en feest verspreid over de dag.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Treden jullie ook buiten Noord-Brabant op?</h3>
-                            <p class="text-gray-700 leading-relaxed">Ja, landelijk! Reiskosten bedragen €0,35 per kilometer en worden vooraf afgestemd. Geen verrassingen — je weet precies wat het gaat kosten.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Hoe snel krijgen we een voorstel?</h3>
-                            <p class="text-gray-700 leading-relaxed">Binnen 24 uur ontvangen jullie een persoonlijk voorstel met bevestigde datum, all-in prijs en setlist-opties. Snel en zonder gedoe.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Hoe flexibel is het op bruiloftsdag zelf?</h3>
-                            <p class="text-gray-700 leading-relaxed">Zeer flexibel. Ceremonie loopt uit? Jullie willen meer tempo? Ik reageer direct op de dag zelf zonder extra stress — totale ondersteuning.</p>
-                        </div>
-
-                        <div class="bg-white p-8 rounded-2xl border border-gray-200 hover:border-ts-gold transition duration-300" data-aos="fade-up">
-                            <h3 class="font-serif text-xl font-bold text-ts-dark mb-3">Wat als we twijfelen en eerst willen horen hoe jullie optreden?</h3>
-                            <p class="text-gray-700 leading-relaxed">Perfect! Lees de 47+ reviews van andere bruidsparen (9.4★ gemiddeld), bekijk video's op Instagram (@thesuitedsinger) of bel direct: <strong>+31 6 41 26 84 05</strong>.</p>
-                        </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-5xl mx-auto">
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-volume-up text-ts-gold mr-1"></i>Geluid & Licht?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">Ja, volledig inbegrepen. Professionele set + LED-verlichting.</p>
                     </div>
 
-                    <!-- Stage Photo Sidebar -->
-                    <div class="md:col-span-1" data-aos="fade-left">
-                        <div class="h-96 rounded-2xl shadow-2xl border-l-4 border-ts-gold overflow-hidden" style="background-image: url('images/Stage_Set_suitedsinger_3.jpg'); background-size: cover; background-position: center;"></div>
-                        <div class="mt-8 bg-white p-6 rounded-2xl border border-gray-200">
-                            <h4 class="font-serif text-lg font-bold text-ts-dark mb-3 flex items-center gap-2">
-                                <i class="fas fa-info-circle text-ts-gold"></i> Pro Tip
-                            </h4>
-                            <p class="text-sm text-gray-700 leading-relaxed">
-                                Vraag gratis naar mogelijkheden voor <strong>microfoonwerk</strong> en <strong>dansleiding</strong> tijdens de receptie. Perfect voor extra sfeer!
-                            </p>
-                        </div>
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up" data-aos-delay="50">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-music text-ts-gold mr-1"></i>Lievelingsnummers?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">Zeker! Setlist volledig op maat naar jouw smaak.</p>
                     </div>
+
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-clock text-ts-gold mr-1"></i>Duur?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">30 min per blok. Bruiloft Compleet: 3x verspreid.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up" data-aos-delay="150">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-map text-ts-gold mr-1"></i>Landelijk?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">Ja! €0,35/km reiskosten, vooraf afgestemd.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-bolt text-ts-gold mr-1"></i>Voorstel?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">Binnen 24 uur met all-in prijs & datum.</p>
+                    </div>
+
+                    <div class="bg-white p-5 rounded-lg border border-gray-200 hover:border-ts-gold transition" data-aos="fade-up" data-aos-delay="250">
+                        <h3 class="font-serif font-bold text-ts-dark text-sm mb-2"><i class="fas fa-heart text-ts-gold mr-1"></i>Flexibel?</h3>
+                        <p class="text-gray-700 text-xs leading-snug">Zeer! Direct reageren op timing & energie.</p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-ts-gold to-yellow-400 p-8 rounded-2xl text-center max-w-2xl mx-auto" data-aos="fade-up">
+                    <h3 class="font-serif text-2xl font-bold text-ts-dark mb-2">Nog vragen?</h3>
+                    <p class="text-ts-dark mb-4">Bel of stuur een bericht — ik help graag!</p>
+                    <a href="tel:+31641268405" class="inline-block bg-ts-dark text-ts-gold px-6 py-3 rounded-lg font-semibold hover:bg-ts-black transition">
+                        <i class="fas fa-phone mr-2"></i>+31 6 41 26 84 05
+                    </a>
                 </div>
             </div>
         </section>
@@ -480,52 +447,12 @@
                 <div class="absolute top-0 left-0 w-96 h-96 bg-ts-gold rounded-full filter blur-3xl"></div>
                 <div class="absolute bottom-0 right-0 w-96 h-96 bg-ts-gold rounded-full filter blur-3xl"></div>
             </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="text-center mb-12" data-aos="fade-down">
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-4">Offerte voor jullie bruiloft?</h2>
-                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">Vertel kort wat jullie plannen zijn (datum, locatie, moment van de dag) en ik stuur binnen 24 uur een voorstel.</p>
-                </div>
-                <div class="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl">
-                    <form action="https://formspree.io/f/mwpqzwyz" method="POST" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-sm font-semibold text-ts-dark mb-2">Voornaam *</label>
-                                <input type="text" name="voornaam" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                            </div>
-                            <div>
-                                <label class="block text-sm font-semibold text-ts-dark mb-2">Achternaam *</label>
-                                <input type="text" name="achternaam" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                            </div>
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-ts-dark mb-2">E-mailadres *</label>
-                            <input type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-ts-dark mb-2">Telefoonnummer *</label>
-                            <input type="tel" name="telefoon" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-ts-dark mb-2">Gewenste trouwdatum *</label>
-                            <input type="date" name="trouwdatum" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-ts-dark mb-2">Locatie *</label>
-                            <input type="text" name="locatie" placeholder="Waar gaat de bruiloft plaats?" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-semibold text-ts-dark mb-2">Jullie ideeën, wensen & vragen</label>
-                            <textarea name="bericht" rows="5" placeholder="Vertellen jullie meer?" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-ts-gold focus:border-transparent"></textarea>
-                        </div>
-                        <div class="flex items-start">
-                            <input type="checkbox" name="privacy" id="privacy" required class="mt-1 mr-3">
-                            <label for="privacy" class="text-sm text-gray-600">Ik ga akkoord met het privacybeleid en wil graag een persoonlijk voorstel ontvangen.</label>
-                        </div>
-                        <button type="submit" class="w-full bg-ts-gold text-ts-dark font-bold py-4 rounded-lg hover:bg-yellow-400 transition duration-300 text-lg shadow-lg">
-                            Stuur Mijn Aanvraag
-                        </button>
-                    </form>
-                </div>
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-6" data-aos="fade-down">Zin om te bellen?</h2>
+                <p class="text-xl text-gray-300 mb-12 max-w-3xl mx-auto" data-aos="fade-up">Stuur een bericht met je wensen, en ik bel je terug binnen 24 uur voor een persoonlijk gesprek.</p>
+                <a href="index.html#contact" class="inline-block bg-ts-gold text-ts-dark font-bold px-12 py-4 rounded-lg hover:bg-yellow-400 transition duration-300 text-lg shadow-2xl transform hover:scale-105" data-aos="fade-up" data-aos-delay="100">
+                    Contactformulier
+                </a>
             </div>
         </section>
     </main>
