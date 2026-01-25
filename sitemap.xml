@@ -1,187 +1,202 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Main Pages -->
+  <!-- Homepage -->
   <url>
     <loc>https://thesuitedsinger.nl/</loc>
-    <lastmod>2025-12-18</lastmod>
+    <lastmod>2026-01-09</lastmod>
     <priority>1.00</priority>
   </url>
   
-  <!-- Service Pages -->
+  <!-- Services Hub & Pages -->
   <url>
-    <loc>https://thesuitedsinger.nl/huwelijk.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/diensten/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/diensten/huwelijk/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/zorg.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/diensten/bedrijfsfeest/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/thechristmassinger.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/diensten/jubileum/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/diensten.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.80</priority>
+    <loc>https://thesuitedsinger.nl/diensten/zorg/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/diensten/kerstentertainment/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.85</priority>
   </url>
   
   <!-- Blog Hub & Articles -->
   <url>
-    <loc>https://thesuitedsinger.nl/blog.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/blog/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/huwelijkszanger-7-vragen/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/dag-van-een-zanger/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/dj-vs-zanger/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/gouden-bruiloft-zanger/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/kerstzanger-gids/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/wat-kost-live-zanger/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://thesuitedsinger.nl/blog/zorgentertainment/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.75</priority>
+  </url>
+  
+  <!-- General Pages -->
+  <url>
+    <loc>https://thesuitedsinger.nl/over-mij/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/blog-huwelijkszanger-7-vragen.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.80</priority>
+    <loc>https://thesuitedsinger.nl/repertoire/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/blog-kerstzanger-gids.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/blog-zorgentertainment.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/blog-dj-vs-zanger.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/blog-wat-kost-live-zanger.html</loc>
-    <lastmod>2025-06-18</lastmod>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/blog-gouden-bruiloft.html</loc>
-    <lastmod>2024-12-10</lastmod>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/blog-dag-zanger.html</loc>
-    <lastmod>2024-11-08</lastmod>
-    <priority>0.75</priority>
+    <loc>https://thesuitedsinger.nl/reviews/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.85</priority>
   </url>
   
-  <!-- Other Main Pages -->
+  <!-- Location Pages (Dutch Cities) -->
   <url>
-    <loc>https://thesuitedsinger.nl/repertoire.html</loc>
-    <lastmod>2025-12-16</lastmod>
-    <priority>0.80</priority>
-  </url>
-  
-  <!-- Dutch City Pages (Local SEO) -->
-  <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.75</priority>
-  </url>
-  <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/breda.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/breda/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/den-bosch.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/tilburg/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/tilburg.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/den-bosch/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/eindhoven.html</loc>
-    <lastmod>2025-12-18</lastmod>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/eindhoven/</loc>
+    <lastmod>2026-01-09</lastmod>
     <priority>0.70</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/roosendaal.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/roosendaal/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/bergen-op-zoom.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/helmond/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/etten-leur.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oss/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oosterhout.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/bergen-op-zoom/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/waalwijk.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/etten-leur/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/heusden.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oosterhout/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/vught.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/waalwijk/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/boxtel.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/heusden/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oisterwijk.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/vught/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/moergestel.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/boxtel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/oss.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/oisterwijk/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/veldhoven.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/moergestel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/helmond.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/kaatsheuvel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/kaatsheuvel.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/uden/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/uden.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/veldhoven/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/veghel.html</loc>
-    <lastmod>2025-12-18</lastmod>
-    <priority>0.70</priority>
+    <loc>https://thesuitedsinger.nl/nederlandse-zanger-brabant/locaties/veghel/</loc>
+    <lastmod>2026-01-09</lastmod>
+    <priority>0.65</priority>
   </url>
 </urlset>
