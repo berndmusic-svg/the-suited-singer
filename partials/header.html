@@ -1,85 +1,150 @@
 <header class="bg-ts-dark shadow-2xl sticky top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" class="text-3xl font-serif text-ts-gold tracking-wider font-bold">
+        <!-- Logo -->
+        <a href="/" class="text-3xl font-serif text-ts-gold tracking-wider font-bold hover:opacity-80 transition duration-300">
             The Suited Singer
         </a>
-        <div class="hidden md:flex space-x-8 items-center">
-            <a href="/" class="text-white hover:text-ts-gold transition duration-500 nav-link" data-nav="home">Home</a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-1 items-center">
+            <a href="/" class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
             
-            <!-- Events Dropdown -->
+            <!-- Events Dropdown (Desktop) -->
             <div class="relative group">
-                <button class="text-white hover:text-ts-gold transition duration-500 cursor-pointer flex items-center nav-link" data-nav="events" id="eventsToggle">
+                <button class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium flex items-center transition duration-300 group-hover:bg-gray-800">
                     Events
-                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition duration-300"></i>
                 </button>
-                <div class="absolute hidden group-hover:block bg-ts-dark shadow-lg rounded-md py-2 w-56 mt-2 space-y-1 z-50" id="eventsDropdown">
-                    <a href="/diensten/jubileum/" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Feesten & Jubilea</a>
-                    <a href="/diensten/bedrijfsfeest/" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Bedrijfsfeesten & Events</a>
-                    <a href="/diensten/huwelijk/" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Bruiloften & Ceremonies</a>
+                <div class="absolute left-0 mt-0 w-56 bg-ts-dark shadow-xl rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 group-hover:translate-y-0 translate-y-2 border border-gray-700">
+                    <a href="/diensten/jubileum/" class="block px-4 py-3 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300 text-sm">Feesten & Jubilea</a>
+                    <a href="/diensten/bedrijfsfeest/" class="block px-4 py-3 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300 text-sm">Bedrijfsfeesten & Events</a>
+                    <a href="/diensten/huwelijk/" class="block px-4 py-3 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300 text-sm">Bruiloften & Ceremonies</a>
                 </div>
             </div>
 
-            <!-- Specials Dropdown -->
+            <!-- Specials Dropdown (Desktop) -->
             <div class="relative group">
-                <button class="text-white hover:text-ts-gold transition duration-500 cursor-pointer flex items-center nav-link" data-nav="specials" id="specialsToggle">
+                <button class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium flex items-center transition duration-300 group-hover:bg-gray-800">
                     Specials
-                    <i class="fas fa-chevron-down ml-2 text-xs"></i>
+                    <i class="fas fa-chevron-down ml-1 text-xs group-hover:rotate-180 transition duration-300"></i>
                 </button>
-                <div class="absolute hidden group-hover:block bg-ts-dark shadow-lg rounded-md py-2 w-56 mt-2 space-y-1 z-50" id="specialsDropdown">
-                    <a href="/diensten/kerstentertainment/" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">The Christmas Singer</a>
-                    <a href="/diensten/zorg/" class="block px-4 py-2 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300">Zorgentertainment</a>
+                <div class="absolute left-0 mt-0 w-56 bg-ts-dark shadow-xl rounded-lg py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 group-hover:translate-y-0 translate-y-2 border border-gray-700">
+                    <a href="/diensten/kerstentertainment/" class="block px-4 py-3 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300 text-sm">The Christmas Singer</a>
+                    <a href="/diensten/zorg/" class="block px-4 py-3 text-white hover:bg-ts-gold hover:text-ts-dark transition duration-300 text-sm">Zorgentertainment</a>
                 </div>
             </div>
 
-            <a href="/repertoire/" class="text-white hover:text-ts-gold transition duration-500 nav-link" data-nav="repertoire">Repertoire</a>
-            <a href="/reviews/" class="text-white hover:text-ts-gold transition duration-500 nav-link" data-nav="reviews">Reviews</a>
-            <a href="/#contact" class="bg-ts-gold text-ts-dark font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-500 shadow-xl nav-link" data-nav="contact">Boek Nu!</a>
+            <a href="/blog/" class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Blog</a>
+            <a href="/repertoire/" class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Repertoire</a>
+            <a href="/reviews/" class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Reviews</a>
+            <a href="/over-mij/" class="text-white hover:text-ts-gold px-3 py-2 rounded-md text-sm font-medium transition duration-300">Over Mij</a>
+            <a href="/#contact" class="bg-ts-gold text-ts-dark font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-300 shadow-xl ml-2">Boek Nu!</a>
         </div>
-        <button id="mobileMenuBtn" class="md:hidden text-white text-xl z-50">
+
+        <!-- Mobile Menu Button -->
+        <button id="mobileMenuBtn" class="md:hidden text-white text-2xl p-2 hover:text-ts-gold transition duration-300">
             <i class="fas fa-bars"></i>
         </button>
     </nav>
     
     <!-- Mobile Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-ts-dark border-t border-gray-700 max-h-0 overflow-hidden transition-all duration-300">
-        <div class="px-4 sm:px-6 lg:px-8 py-4 space-y-3">
-            <a href="/" class="block text-white hover:text-ts-gold transition duration-500 py-2 nav-link" data-nav="home">Home</a>
-            
-            <div class="border-b border-gray-700"></div>
+    <div id="mobileMenu" class="md:hidden bg-ts-dark border-t border-gray-700 max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+        <div class="px-4 sm:px-6 lg:px-8 py-4 space-y-2">
+            <a href="/" class="block text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md transition duration-300 mobile-menu-link">Home</a>
             
             <!-- Mobile Events Dropdown -->
-            <div class="space-y-2">
-                <button class="w-full text-left text-white font-semibold text-sm uppercase tracking-wide flex justify-between items-center" id="mobileEventsToggle">
+            <div class="space-y-1">
+                <button class="w-full text-left text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md font-medium text-sm flex justify-between items-center transition duration-300 mobile-dropdown-toggle" data-dropdown="events">
                     <span>Events</span>
-                    <i class="fas fa-chevron-down text-xs"></i>
+                    <i class="fas fa-chevron-down text-xs transition duration-300"></i>
                 </button>
-                <div id="mobileEventsMenu" class="hidden pl-4 space-y-2">
-                    <a href="/diensten/jubileum/" class="block text-gray-300 hover:text-ts-gold transition duration-500 py-1 nav-link">Feesten & Jubilea</a>
-                    <a href="/diensten/bedrijfsfeest/" class="block text-gray-300 hover:text-ts-gold transition duration-500 py-1 nav-link">Bedrijfsfeesten & Events</a>
-                    <a href="/diensten/huwelijk/" class="block text-gray-300 hover:text-ts-gold transition duration-500 py-1 nav-link">Bruiloften & Ceremonies</a>
+                <div class="mobile-dropdown hidden pl-6 space-y-1" id="mobileEventsDrop">
+                    <a href="/diensten/jubileum/" class="block text-gray-300 hover:text-ts-gold px-3 py-2 rounded-md text-sm transition duration-300 mobile-menu-link">Feesten & Jubilea</a>
+                    <a href="/diensten/bedrijfsfeest/" class="block text-gray-300 hover:text-ts-gold px-3 py-2 rounded-md text-sm transition duration-300 mobile-menu-link">Bedrijfsfeesten & Events</a>
+                    <a href="/diensten/huwelijk/" class="block text-gray-300 hover:text-ts-gold px-3 py-2 rounded-md text-sm transition duration-300 mobile-menu-link">Bruiloften & Ceremonies</a>
                 </div>
             </div>
 
             <!-- Mobile Specials Dropdown -->
-            <div class="space-y-2">
-                <button class="w-full text-left text-white font-semibold text-sm uppercase tracking-wide flex justify-between items-center" id="mobileSpecialsToggle">
+            <div class="space-y-1">
+                <button class="w-full text-left text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md font-medium text-sm flex justify-between items-center transition duration-300 mobile-dropdown-toggle" data-dropdown="specials">
                     <span>Specials</span>
-                    <i class="fas fa-chevron-down text-xs"></i>
+                    <i class="fas fa-chevron-down text-xs transition duration-300"></i>
                 </button>
-                <div id="mobileSpecialsMenu" class="hidden pl-4 space-y-2">
-                    <a href="/diensten/kerstentertainment/" class="block text-gray-300 hover:text-ts-gold transition duration-500 py-1 nav-link">The Christmas Singer</a>
-                    <a href="/diensten/zorg/" class="block text-gray-300 hover:text-ts-gold transition duration-500 py-1 nav-link">Zorgentertainment</a>
+                <div class="mobile-dropdown hidden pl-6 space-y-1" id="mobileSpecialsDrop">
+                    <a href="/diensten/kerstentertainment/" class="block text-gray-300 hover:text-ts-gold px-3 py-2 rounded-md text-sm transition duration-300 mobile-menu-link">The Christmas Singer</a>
+                    <a href="/diensten/zorg/" class="block text-gray-300 hover:text-ts-gold px-3 py-2 rounded-md text-sm transition duration-300 mobile-menu-link">Zorgentertainment</a>
                 </div>
             </div>
 
-            <div class="border-b border-gray-700"></div>
+            <a href="/blog/" class="block text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md transition duration-300 mobile-menu-link">Blog</a>
+            <a href="/repertoire/" class="block text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md transition duration-300 mobile-menu-link">Repertoire</a>
+            <a href="/reviews/" class="block text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md transition duration-300 mobile-menu-link">Reviews</a>
+            <a href="/over-mij/" class="block text-white hover:text-ts-gold hover:bg-gray-800 px-3 py-2 rounded-md transition duration-300 mobile-menu-link">Over Mij</a>
             
-            <a href="/repertoire/" class="block text-white hover:text-ts-gold transition duration-500 py-2 nav-link" data-nav="repertoire">Repertoire</a>
-            <a href="/reviews/" class="block text-white hover:text-ts-gold transition duration-500 py-2 nav-link" data-nav="reviews">Reviews</a>
+            <div class="border-t border-gray-700 pt-3 mt-3"></div>
             
-            <div class="border-b border-gray-700"></div>
-            
-            <a href="/#contact" class="block w-full text-center bg-ts-gold text-ts-dark font-semibold px-6 py-2 rounded-full hover:bg-yellow-400 transition duration-500 shadow-xl nav-link" data-nav="contact">Boek Nu!</a>
+            <a href="/#contact" class="block w-full text-center bg-ts-gold text-ts-dark font-semibold px-6 py-3 rounded-full hover:bg-yellow-400 transition duration-300 shadow-xl mobile-menu-link">Boek Nu!</a>
         </div>
     </div>
 </header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const dropdownToggles = document.querySelectorAll('.mobile-dropdown-toggle');
+    const menuLinks = document.querySelectorAll('.mobile-menu-link');
+
+    // Toggle mobile menu open/close
+    mobileMenuBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        const isHidden = mobileMenu.classList.contains('max-h-0');
+        if (isHidden) {
+            mobileMenu.classList.remove('max-h-0');
+            mobileMenu.classList.add('max-h-96');
+        } else {
+            mobileMenu.classList.add('max-h-0');
+            mobileMenu.classList.remove('max-h-96');
+        }
+    });
+
+    // Handle dropdown toggles
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdownId = this.dataset.dropdown === 'events' ? 'mobileEventsDrop' : 'mobileSpecialsDrop';
+            const dropdown = document.getElementById(dropdownId);
+            const icon = this.querySelector('i');
+            
+            dropdown.classList.toggle('hidden');
+            icon.classList.toggle('rotate-180');
+        });
+    });
+
+    // Close menu when a link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            // Close mobile menu
+            mobileMenu.classList.add('max-h-0');
+            mobileMenu.classList.remove('max-h-96');
+            
+            // Close any open dropdowns
+            document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+                dropdown.classList.add('hidden');
+            });
+            document.querySelectorAll('.mobile-dropdown-toggle i').forEach(icon => {
+                icon.classList.remove('rotate-180');
+            });
+        });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+            mobileMenu.classList.add('max-h-0');
+            mobileMenu.classList.remove('max-h-96');
+        }
+    });
+});
+</script>
