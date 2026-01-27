@@ -76,16 +76,21 @@
         .btn-primary:hover { background-color: #fcd34d; transform: scale(1.05); }
     </style>
 
-    <!-- Fonts with preconnect -->
+    <!-- Fonts with preconnect (async with media trick) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print\" onload=\"this.media='all'\">
+    <!-- AOS CSS (async loaded) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
 
-    <script src="https://cdn.tailwindcss.com" defer></script>
+    <!-- FontAwesome (async loaded) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+
+    <!-- Tailwind CSS (loaded async via script at end, before closing body) -->
     <script>
-        tailwind.config = {
+        window.tailwindConfig = {
             theme: {
                 extend: {
                     colors: {
@@ -99,10 +104,8 @@
                     }
                 }
             }
-        }
+        };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4ZZ97SY4W"></script>
@@ -112,8 +115,6 @@
       gtag('js', new Date());
       gtag('config', 'G-P4ZZ97SY4W');
     </script>
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
-    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script">
 </head>
 <body class="bg-ts-dark font-sans antialiased" style="background-color: #0F1419;">
 
@@ -688,5 +689,20 @@
         });
     </script><!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
+
+    <!-- Load Tailwind CSS asynchronously to avoid render-blocking -->
+    <script defer>
+        (function() {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.href = 'https://cdn.tailwindcss.com';
+            link.onload = function() {
+                if (window.tailwindConfig) {
+                    tailwind.config = window.tailwindConfig;
+                }
+            };
+            document.head.appendChild(link);
+        })();
+    </script>
 </body>
 </html>
