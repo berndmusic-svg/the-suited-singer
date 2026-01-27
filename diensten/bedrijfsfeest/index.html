@@ -25,6 +25,10 @@
     <!-- Hreflang -->
     <link rel="alternate" href="https://thesuitedsinger.nl/diensten/bedrijfsfeest/" hreflang="nl" />
 
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- JSON-LD Schema: LocalBusiness -->
     <script type="application/ld+json">
     {
@@ -60,10 +64,12 @@
     <!-- Favicon -->
     <link rel="icon" href="images/The_Suited_Singer_10.avif" type="image/png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"></noscript>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print\" onload=\"this.media='all'\">
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
     <script>
         tailwind.config = {
             theme: {
@@ -81,7 +87,8 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4ZZ97SY4W"></script>
@@ -91,6 +98,8 @@
       gtag('js', new Date());
       gtag('config', 'G-P4ZZ97SY4W');
     </script>
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.css" as="style">
+    <link rel="preload" href="https://unpkg.com/aos@2.3.1/dist/aos.js" as="script">
 </head>
 <body class="bg-ts-dark font-sans antialiased" style="background-color: #0F1419;">
 
@@ -132,7 +141,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
-                    <img src="/images/The_suited_singer_4.avif" alt="Live muziek bedrijfsfeest" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                    <img src="/images/The_suited_singer_4.avif" alt="Live muziek bedrijfsfeest" width="600" height="400" loading="lazy" class="rounded-xl shadow-2xl w-full h-auto object-cover">
                 </div>
                 <div class="lg:pl-8" data-aos="fade-left">
                     <h2 class="text-4xl font-serif font-bold mb-4" style="color: #F5F1E8;">Professioneel Vermaak Op Maat</h2>
@@ -652,12 +661,16 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            easing: 'ease-in-out-cubic',
-            once: true
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out-cubic',
+                    once: true
+                });
+            }
         });
     </script><!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
