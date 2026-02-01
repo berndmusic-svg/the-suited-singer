@@ -322,10 +322,17 @@
 </head>
 <body class="bg-gray-50 font-sans antialiased overflow-x-hidden">
 
+    <!-- Sticky Mobile CTA Button -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-ts-gold shadow-2xl p-3 border-t-4 border-ts-gold" style="display: none;">
+        <a href="#contact" class="block w-full bg-ts-gold text-ts-dark font-bold py-3 rounded-lg text-center hover:bg-yellow-400 transition duration-300">
+            Vraag Offerte Aan
+        </a>
+    </div>
+
     <!-- Centralized Header -->
     <div id="site-header"></div>
 
-    <main>
+    <main style="padding-bottom: 80px;">
         <section id="hero" class="relative bg-ts-black min-h-screen md:h-[90vh] flex items-center justify-start overflow-hidden py-16 md:py-0">
             <div class="absolute inset-0 bg-cover bg-center opacity-60 transition duration-500" 
                  style="background-image: url('images/Untitled design.svg');"></div>
@@ -1168,6 +1175,20 @@
             updateCounter('counter-years', 15, '+');
             updateCounter('counter-gigs', 150, '+');
             updateCounter('counter-success', 100, '%');
+            
+            // Show sticky CTA after scrolling 500px on mobile
+            const stickyCta = document.getElementById('sticky-cta');
+            if (stickyCta) {
+                window.addEventListener('scroll', function() {
+                    if (window.innerWidth < 768) {
+                        if (window.scrollY > 500) {
+                            stickyCta.style.display = 'block';
+                        } else {
+                            stickyCta.style.display = 'none';
+                        }
+                    }
+                });
+            }
         };
     </script><!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
