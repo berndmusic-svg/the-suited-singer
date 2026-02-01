@@ -84,11 +84,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
 
-    <!-- FontAwesome (async loaded) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"></noscript>
+    <!-- FontAwesome (required for icons - sync load) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-    <!-- Tailwind CSS (loaded async via script at end, before closing body) -->
+    <!-- Tailwind CSS (critical for page layout) -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         window.tailwindConfig = {
             theme: {
@@ -689,20 +689,5 @@
         });
     </script><!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
-
-    <!-- Load Tailwind CSS asynchronously to avoid render-blocking -->
-    <script defer>
-        (function() {
-            var link = document.createElement('link');
-            link.rel = 'stylesheet';
-            link.href = 'https://cdn.tailwindcss.com';
-            link.onload = function() {
-                if (window.tailwindConfig) {
-                    tailwind.config = window.tailwindConfig;
-                }
-            };
-            document.head.appendChild(link);
-        })();
-    </script>
 </body>
 </html>
