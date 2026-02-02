@@ -575,83 +575,23 @@
         </section>
 
         <!-- CTA Section -->
-        <section id="aanvraag" class="relative py-24" style="background: linear-gradient(135deg, #0F1419 0%, #1A1A2E 100%);">
+        <section class="relative py-24" style="background: linear-gradient(135deg, #0F1419 0%, #1A1A2E 100%);">
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-6" data-aos="fade-in">Maak je keuze</h2>
-                    <p class="text-lg text-gray-300" data-aos="fade-in" data-aos-delay="100">Zeg ja tegen onvergetlijk entertainment voor je bedrijfsfeest. Reactie gegarandeerd binnen 2 uur.</p>
-                </div>
-
-                <form class="space-y-6 bg-ts-dark bg-opacity-95 p-8 rounded-xl shadow-2xl border border-ts-gold border-opacity-30" action="https://formspree.io/f/xblnqyrp" method="POST" data-aos="fade-up">
-                    <h3 class="text-2xl font-serif font-bold text-ts-gold mb-6">Vraag hier je event aan</h3>
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Naam -->
-                        <div>
-                            <label for="naam" class="block text-sm font-medium text-ts-gold mb-2">Je naam *</label>
-                            <input type="text" id="naam" name="naam" required class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="John Doe">
-                        </div>
-
-                        <!-- Bedrijf -->
-                        <div>
-                            <label for="bedrijf" class="block text-sm font-medium text-ts-gold mb-2">Bedrijf / Organisatie *</label>
-                            <input type="text" id="bedrijf" name="bedrijf" required class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="Acme Corp">
-                        </div>
-
-                        <!-- Email -->
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-ts-gold mb-2">Email *</label>
-                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="john@example.com">
-                        </div>
-
-                        <!-- Telefoon -->
-                        <div>
-                            <label for="telefoon" class="block text-sm font-medium text-ts-gold mb-2">Telefoon *</label>
-                            <input type="tel" id="telefoon" name="telefoon" required class="w-full px-4 py-3 rounded-lg bg-gray-50 border border-gray-300 text-gray-900 placeholder-gray-400 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="+31 6 12 345 678">
-                        </div>
-
-                        <!-- Datum event -->
-                        <div>
-                            <label for="datum" class="block text-sm font-medium text-ts-gold mb-2">Datum van je event *</label>
-                            <input type="date" id="datum" name="datum" required class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors">
-                        </div>
-
-                        <!-- Aantal gasten -->
-                        <div>
-                            <label for="gasten" class="block text-sm font-medium text-ts-gold mb-2">Aantal gasten *</label>
-                            <input type="number" id="gasten" name="gasten" required min="10" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="100">
-                        </div>
-
-                        <!-- Locatie -->
-                        <div class="md:col-span-2">
-                            <label for="locatie" class="block text-sm font-medium text-ts-gold mb-2">Locatie van het event *</label>
-                            <input type="text" id="locatie" name="locatie" required class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="Straatnaam 123, Tilburg">
-                        </div>
-
-                        <!-- Planning / Setup -->
-                        <div class="md:col-span-2">
-                            <label for="planning" class="block text-sm font-medium text-ts-gold mb-2">Gewenste setup / planning</label>
-                            <textarea id="planning" name="planning" rows="3" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="Bv: Sound system aanwezig? Zitplek voor artiest? Duur optreden?"></textarea>
-                        </div>
-
-                        <!-- Bericht -->
-                        <div class="md:col-span-2">
-                            <label for="bericht" class="block text-sm font-medium text-ts-gold mb-2">Overige info / vragen</label>
-                            <textarea id="bericht" name="bericht" rows="4" class="w-full px-4 py-3 rounded-lg bg-gray-900 border border-ts-gold border-opacity-30 text-white placeholder-gray-500 focus:border-ts-gold focus:ring-ts-gold focus:outline-none transition-colors" placeholder="Laat hier extra info achter..."></textarea>
-                        </div>
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-6">Klaar voor je offerte?</h2>
+                    <p class="text-lg text-gray-300 mb-8">Stuur je details in en ontvang binnen 2 uur een persoonlijk voorstel. Geen verplichtingen.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/#aanvraag" class="inline-block px-8 py-4 bg-ts-gold text-ts-dark font-semibold rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
+                            Vraag hier je offerte aan
+                        </a>
+                        <a href="https://wa.me/31612345678?text=Hallo%2C%20ik%20ben%20geïnteresseerd%20in%20een%20bedrijfsfeest%20met%20live%20zanger" target="_blank" class="inline-block px-8 py-4 border-2 border-ts-gold text-ts-gold font-semibold rounded-lg hover:bg-ts-gold hover:text-ts-dark transition-all transform hover:scale-105">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
                     </div>
-
-                    <!-- BTW Disclaimer -->
-                    <p class="text-xs text-gray-400">Alle bedragen excl. 9% btw, factuur mogelijk.</p>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="w-full bg-ts-gold text-ts-dark py-3 rounded-lg font-semibold font-bold hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
-                        Verstuur aanvraag
-                    </button>
-
-                    <!-- Privacy notice -->
-                    <p class="text-xs text-gray-400 text-center">We respecteren je privacy. Je gegevens worden alleen gebruikt om je aanvraag af te handelen.</p>
-                </form>
+                    
+                    <p class="text-sm text-gray-400 mt-8">Of bel direct: <a href="tel:+31612345678" class="text-ts-gold hover:underline">+31 6 12 345 678</a></p>
+                </div>
             </div>
         </section>
     </main>
