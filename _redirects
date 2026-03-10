@@ -15,6 +15,21 @@
 # Old blog hub
 /blog.html /blog/ 301
 
+# Legal page aliases
+/algemene-voorwaarden/ /algemene-voorwaarden.html 301
+/blog/algemene-voorwaarden.html /algemene-voorwaarden.html 301
+/nederlandse-zanger-brabant/algemene-voorwaarden.html /algemene-voorwaarden.html 301
+
+# Legacy relative links from geo pages
+/nederlandse-zanger-brabant/repertoire.html /repertoire/ 301
+/nederlandse-zanger-brabant/zorg.html /diensten/zorg/ 301
+/nederlandse-zanger-brabant/thechristmassinger.html /diensten/kerstentertainment/ 301
+
+# Canonical location URL support
+/nederlandse-zanger-brabant/locaties/:stad/ /nederlandse-zanger-brabant/:stad.html 301
+/nederlandse-zanger-brabant/locaties/:stad /nederlandse-zanger-brabant/:stad.html 301
+/nederlandse-zanger-brabant/locaties/:stad.html /nederlandse-zanger-brabant/:stad.html 301
+
 # Old blog posts
 /blog-huwelijkszanger-7-vragen.html /blog/huwelijkszanger-7-vragen/ 301
 /blog-kerstzanger-gids.html /blog/kerstzanger-gids/ 301
@@ -25,23 +40,3 @@
 /blog-dag-zanger.html /blog/dag-van-een-zanger/ 301
 
 # Old geo-pages (dutch cities)
-/nederlandse-zanger-brabant/breda.html /nederlandse-zanger-brabant/locaties/breda/ 301
-/nederlandse-zanger-brabant/tilburg.html /nederlandse-zanger-brabant/locaties/tilburg/ 301
-/nederlandse-zanger-brabant/den-bosch.html /nederlandse-zanger-brabant/locaties/den-bosch/ 301
-/nederlandse-zanger-brabant/eindhoven.html /nederlandse-zanger-brabant/locaties/eindhoven/ 301
-/nederlandse-zanger-brabant/roosendaal.html /nederlandse-zanger-brabant/locaties/roosendaal/ 301
-/nederlandse-zanger-brabant/helmond.html /nederlandse-zanger-brabant/locaties/helmond/ 301
-/nederlandse-zanger-brabant/oss.html /nederlandse-zanger-brabant/locaties/oss/ 301
-/nederlandse-zanger-brabant/bergen-op-zoom.html /nederlandse-zanger-brabant/locaties/bergen-op-zoom/ 301
-/nederlandse-zanger-brabant/etten-leur.html /nederlandse-zanger-brabant/locaties/etten-leur/ 301
-/nederlandse-zanger-brabant/oosterhout.html /nederlandse-zanger-brabant/locaties/oosterhout/ 301
-/nederlandse-zanger-brabant/waalwijk.html /nederlandse-zanger-brabant/locaties/waalwijk/ 301
-/nederlandse-zanger-brabant/heusden.html /nederlandse-zanger-brabant/locaties/heusden/ 301
-/nederlandse-zanger-brabant/vught.html /nederlandse-zanger-brabant/locaties/vught/ 301
-/nederlandse-zanger-brabant/boxtel.html /nederlandse-zanger-brabant/locaties/boxtel/ 301
-/nederlandse-zanger-brabant/oisterwijk.html /nederlandse-zanger-brabant/locaties/oisterwijk/ 301
-/nederlandse-zanger-brabant/moergestel.html /nederlandse-zanger-brabant/locaties/moergestel/ 301
-/nederlandse-zanger-brabant/kaatsheuvel.html /nederlandse-zanger-brabant/locaties/kaatsheuvel/ 301
-/nederlandse-zanger-brabant/uden.html /nederlandse-zanger-brabant/locaties/uden/ 301
-/nederlandse-zanger-brabant/veldhoven.html /nederlandse-zanger-brabant/locaties/veldhoven/ 301
-/nederlandse-zanger-brabant/veghel.html /nederlandse-zanger-brabant/locaties/veghel/ 301
