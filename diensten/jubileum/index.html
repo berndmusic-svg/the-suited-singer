@@ -93,6 +93,13 @@
 </head>
 <body class="bg-gray-50 font-sans antialiased">
 
+    <!-- Sticky Mobile CTA Button -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-ts-gold shadow-2xl p-3 border-t-4 border-ts-gold" style="display: none;">
+        <a href="#contact" class="block w-full bg-ts-gold text-ts-dark font-bold py-3 rounded-lg text-center hover:bg-yellow-400 transition duration-300">
+            Vraag Beschikbaarheid Aan
+        </a>
+    </div>
+
     <!-- Centralized Header -->
     <div id="site-header"></div>
 
@@ -100,7 +107,7 @@
         <!-- Hero Section -->
         <section id="hero" class="relative bg-ts-black min-h-[70vh] flex items-center justify-start overflow-hidden py-16 md:py-0">
             <div class="absolute inset-0 bg-cover bg-center opacity-40 transition duration-500" 
-                 style="background-image: url('images/impression_image_6.avif'); background-position: center 35%;"></div>
+                 style="background-image: url('/images/impression_image_6.avif'); background-position: center 35%;"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-ts-black/95 via-ts-black/80 to-transparent"></div>
             <div class="relative z-10 text-white max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div class="max-w-2xl">
@@ -127,69 +134,377 @@
         </section>
 
         <!-- Intro Section -->
-        <section id="intro" class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section id="intro" class="py-20" style="background-color: #0F1419;">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div data-aos="fade-right">
-                    <img src="images/impression_image_6.avif" alt="Zanger feest jubileum" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+                    <img src="/images/impression_image_6.avif" alt="Zanger feest jubileum" width="600" height="400" loading="lazy" class="rounded-xl shadow-2xl w-full h-auto object-cover">
                 </div>
                 <div class="lg:pl-8" data-aos="fade-left">
-                    <h2 class="text-4xl font-serif font-bold mb-4 text-ts-dark">De Juiste Sfeer Voor Elk Moment</h2>
-                    <p class="text-lg text-gray-700 mb-6">
+                    <h2 class="text-4xl font-serif font-bold mb-4" style="color: #F5F1E8;">De Juiste Sfeer Voor Elk Moment</h2>
+                    <p class="text-lg text-gray-300 mb-6">
                         Een verjaardag of jubileum vraagt om muziek die aansluit bij het publiek. Van ontspannen achtergrondmuziek tot een feestelijk hoogtepunt — ik stem alles af op jullie gasten en de setting.
                     </p>
-                    <p class="text-gray-600">
+                    <p class="text-gray-400">
                         Geen standaard 'act', maar een optreden dat écht bij jullie hoort. Herkenbare nummers, flexibel tempo, en aandacht voor het moment.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Content Section -->
-        <section class="py-24 bg-white">
+        <!-- Content Section - Geschikt voor -->
+        <section class="py-24 bg-ts-dark">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-3xl">
-                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark mb-8" data-aos="fade-in">Voorbeelden van gelegenheden</h2>
-                    
-                    <div class="prose prose-lg max-w-none space-y-6 text-gray-700" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-12" data-aos="fade-in">Geschikt voor</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+                    <!-- Bullets -->
+                    <div data-aos="fade-up">
                         <ul class="space-y-3 list-none">
                             <li class="flex gap-3">
                                 <i class="fas fa-check text-ts-gold text-xl flex-shrink-0 mt-1"></i>
-                                <span>Verjaardagen (klein en groot)</span>
+                                <span class="text-white">Verjaardagen (klein en groot)</span>
                             </li>
                             <li class="flex gap-3">
                                 <i class="fas fa-check text-ts-gold text-xl flex-shrink-0 mt-1"></i>
-                                <span>Jubilea en familiefeesten</span>
+                                <span class="text-white">Jubilea en familiefeesten</span>
                             </li>
                             <li class="flex gap-3">
                                 <i class="fas fa-check text-ts-gold text-xl flex-shrink-0 mt-1"></i>
-                                <span>Verenigingen en feestavonden</span>
+                                <span class="text-white">Verenigingen en feestavonden</span>
                             </li>
                             <li class="flex gap-3">
                                 <i class="fas fa-check text-ts-gold text-xl flex-shrink-0 mt-1"></i>
-                                <span>Garden party's en borrels</span>
+                                <span class="text-white">Garden party's en borrels</span>
                             </li>
                         </ul>
+                    </div>
 
-                        <h3 class="text-2xl font-serif font-bold text-ts-dark mt-10 mb-4">Repertoire (NL & EN)</h3>
-                        <p>Denk aan herkenbare Engelstalige classics, pophits en Nederlandstalige nummers die mensen mee kunnen zingen. Jullie bepalen de richting; ik zorg voor de juiste opbouw.</p>
+                    <!-- Van sfeervol tot feestelijk -->
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-serif font-bold text-ts-gold mb-4">Van sfeervol tot feestelijk</h3>
+                        <p class="text-gray-300">Tijdens ontvangst en diner houd ik het stijlvol en ontspannen. Later kan het tempo omhoog met herkenbare NL & EN hits — feestelijk, maar altijd verzorgd.</p>
+                    </div>
 
-                        <h3 class="text-2xl font-serif font-bold text-ts-dark mt-10 mb-4">Waarom dit werkt</h3>
-                        <p>Geen standaard riedel, maar meebewegen met het publiek. Rustig waar het kan, energie waar het mag — zonder dat het schreeuwerig wordt.</p>
+                    <!-- Praktisch & zorgeloos -->
+                    <div data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-serif font-bold text-ts-gold mb-4">Praktisch & zorgeloos</h3>
+                        <p class="text-gray-300">Volledige techniek inbegrepen: professioneel geluid, LED-sfeerverlichting en stageset. Opbouw- en afbouwtijd ongeveer 45 minuten. Minimale vloerruimte: 2 × 3 meter.</p>
+                    </div>
+                </div>
+
+                <!-- Problem → Solution Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-aos="fade-up">
+                    <!-- Card 1: Ontvangst -->
+                    <div class="rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 p-8" style="background-color: #1A1A1A; border-color: #D4AF37;">
+                        <div class="mb-4">
+                            <i class="fas fa-champagne-glasses text-4xl text-ts-gold"></i>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-ts-gold mb-3">Ontvangst & Borrel</h4>
+                        <p class="text-sm text-gray-300">Soft live muziek op de achtergrond. Gasten voelen zich welkom en kunnen ontspannen. Geen storende volumes — zuiver vermaak.</p>
+                        <a href="#contact" class="inline-block mt-6 px-4 py-2 bg-ts-gold text-ts-dark text-sm font-semibold rounded-lg hover:bg-yellow-400 transition duration-500">Info opvragen</a>
+                    </div>
+
+                    <!-- Card 2: Diner -->
+                    <div class="rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 p-8" style="background-color: #1A1A1A; border-color: #D4AF37;">
+                        <div class="mb-4">
+                            <i class="fas fa-utensils text-4xl text-ts-gold"></i>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-ts-gold mb-3">Diner & Maaltijd</h4>
+                        <p class="text-sm text-gray-300">Stijlvolle live zang die niet te veel aandacht vraagt, maar wel voelbaar aanwezig is. De juiste mix van klasse en sfeer.</p>
+                        <a href="#contact" class="inline-block mt-6 px-4 py-2 bg-ts-gold text-ts-dark text-sm font-semibold rounded-lg hover:bg-yellow-400 transition duration-500">Info opvragen</a>
+                    </div>
+
+                    <!-- Card 3: Feest -->
+                    <div class="rounded-xl shadow-lg hover:shadow-xl transition-shadow border-2 p-8" style="background-color: #1A1A1A; border-color: #D4AF37;">
+                        <div class="mb-4">
+                            <i class="fas fa-music text-4xl text-ts-gold"></i>
+                        </div>
+                        <h4 class="text-xl font-serif font-bold text-ts-gold mb-3">Feestelijk & Dans</h4>
+                        <p class="text-sm text-gray-300">Energieke live muziek met hits die mensen kennen. Hoog tempo, volle zaal, gelach en dans — echte feestsfeer.</p>
+                        <a href="#contact" class="inline-block mt-6 px-4 py-2 bg-ts-gold text-ts-dark text-sm font-semibold rounded-lg hover:bg-yellow-400 transition duration-500">Info opvragen</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CTA Section -->
-        <section class="bg-gradient-to-r from-ts-gold to-yellow-500 py-12 md:py-16">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-                <div class="text-ts-dark">
-                    <h3 class="text-2xl md:text-3xl font-serif font-bold mb-2">Willen jullie een feest dat klopt?</h3>
-                    <p class="text-sm md:text-base opacity-90">Vertel kort wat voor feest het is (type, datum, locatie, gasten) en ik stuur binnen 24 uur een voorstel.</p>
+        <!-- Media Section - Sfeerimpressie -->
+        <section id="sfeer" class="py-24" style="background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-12 text-center" data-aos="fade-in">Sfeerimpressie</h2>
+                
+                <!-- Desktop: 2×3 grid, Mobile: 1 column -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Row 1, Col 1: Video Angels -->
+                    <div class="group" data-aos="fade-up">
+                        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-black flex items-center justify-center">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube-nocookie.com/embed/heUzM6yHH9k?rel=0" 
+                                title="Angels - The Suited Singer" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy"
+                                style="width: 100%; height: 100%; border: none;">
+                            </iframe>
+                        </div>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Angels</p>
+                    </div>
+                    
+                    <!-- Row 1, Col 2: Video Hopelessly -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="100">
+                        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-black flex items-center justify-center">
+                            <iframe 
+                                width="100%" 
+                                height="100%" 
+                                src="https://www.youtube-nocookie.com/embed/P8M7cEnB-_c?rel=0" 
+                                title="Hopelessly Devoted to You - The Suited Singer" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                                loading="lazy"
+                                style="width: 100%; height: 100%; border: none;">
+                            </iframe>
+                        </div>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Hopelessly Devoted to You</p>
+                    </div>
+                    
+                    <!-- Row 1, Col 3: Photo Stage -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="200">
+                        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-gray-200">
+                            <img src="/images/Stage_Set_suitedsinger_3.avif" alt="Stageset, strak en compact" loading="lazy" width="500" height="280" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Stageset, compact en professioneel</p>
+                    </div>
+                    
+                    <!-- Row 2, Col 1: Photo The Suited Singer 1 -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="300">
+                        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-gray-200">
+                            <img src="/images/The_suited_singer_1.avif" alt="The Suited Singer professioneel pak" loading="lazy" width="500" height="280" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Stijlvol en representatief</p>
+                    </div>
+                    
+                    <!-- Row 2, Col 2: Photo The Suited Singer 3 -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="400">
+                        <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-gray-200">
+                            <img src="/images/The_suited_singer_3.avif" alt="The Suited Singer op het podium" loading="lazy" width="500" height="280" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Professioneel en energiek</p>
+                    </div>
+
+                    <!-- Row 2, Col 3: Spotify Card -->
+                    <div class="group" data-aos="fade-up" data-aos-delay="500">
+                        <a href="https://open.spotify.com/track/4t00zF42LVWxicyylxZIge?si=cc2dfc2e704f455b" target="_blank" rel="noopener noreferrer" class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow aspect-video bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center flex-col gap-3 text-white hover:from-green-600 hover:to-green-700">
+                            <i class="fab fa-spotify text-4xl"></i>
+                            <span class="text-sm font-semibold">Luister op Spotify</span>
+                        </a>
+                        <p class="text-sm text-ts-gold font-semibold mt-3">Toen ik je zag</p>
+                    </div>
                 </div>
-                <a href="index.html#contact" class="inline-block bg-ts-dark text-ts-gold font-bold px-8 py-3 rounded-lg hover:bg-ts-black transition duration-500 transform hover:scale-105 shadow-2xl whitespace-nowrap">
-                    Vraag offerte aan
-                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-24 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-4" data-aos="fade-in">Wat klanten zeggen</h2>
+                <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto" data-aos="fade-in">Reviews van feesten en jubilea</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-ts-gold" data-aos="fade-up">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="text-lg text-ts-gold">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm text-gray-700 mb-6 italic leading-relaxed">
+                            "Bernd maakte ons 50-jarig jubileum echt onvergetelijk. De muziek was precies wat we zochten: herkenbaar, stijlvol en op het juiste moment feestelijk. Alle gasten waren enthousiast!"
+                        </blockquote>
+                        <p class="font-semibold text-ts-dark">Familie Jansen</p>
+                        <p class="text-xs text-gray-500">Jubileum, Tilburg</p>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-ts-gold" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="text-lg text-ts-gold">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm text-gray-700 mb-6 italic leading-relaxed">
+                            "Voor mijn 60e verjaardag wilden we iets bijzonders. Bernd zorgde voor de perfecte sfeer en schakelde moeiteloos tussen rustige en energieke momenten. Top!"
+                        </blockquote>
+                        <p class="font-semibold text-ts-dark">Peter van der Berg</p>
+                        <p class="text-xs text-gray-500">Verjaardag, Breda</p>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border-l-4 border-ts-gold" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start gap-4 mb-6">
+                            <div class="text-lg text-ts-gold">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm text-gray-700 mb-6 italic leading-relaxed">
+                            "Professioneel van begin tot eind. De communicatie vooraf was helder en op de dag zelf liep alles perfect. Onze gasten hebben genoten van de live muziek!"
+                        </blockquote>
+                        <p class="font-semibold text-ts-dark">Sandra & Mark</p>
+                        <p class="text-xs text-gray-500">Familiefeest, Den Bosch</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-12">
+                    <a href="/#reviews" class="inline-flex items-center px-8 py-4 bg-ts-dark text-ts-gold font-bold rounded-lg hover:bg-ts-black transition duration-300 border border-ts-gold">
+                        Lees alle reviews <i class="fas fa-arrow-right ml-3 text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pakketten Section -->
+        <section id="pakketten" class="py-24" style="background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-ts-gold" data-aos="fade-in">Pakketten</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Pakket 1 -->
+                    <div class="rounded-xl shadow-xl hover:shadow-2xl transition-all border-2 p-8 hover:border-ts-gold flex flex-col" data-aos="fade-up" style="background-color: #0F1419; border-color: #D4AF37;">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Compact</h3>
+                        <p class="text-sm text-gray-400 mb-6">2 × 30 minuten</p>
+                        <p class="text-4xl font-bold mb-6 text-ts-gold">€595</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>2 × 30 minuten</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Techniek en stageset inbegrepen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Tot 150 personen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Opbouw/afbouw ~45 min</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 mb-6">Incl. 21% btw</p>
+                        <a href="#contact" class="w-full inline-block px-6 py-3 bg-ts-gold text-ts-dark font-semibold rounded-lg hover:bg-yellow-300 transition duration-500 text-center mt-auto">
+                            Offerte aanvragen
+                        </a>
+                    </div>
+                    
+                    <!-- Pakket 2 - Featured -->
+                    <div class="relative rounded-xl shadow-2xl border-4 pt-20 px-8 pb-8 flex flex-col" style="border-color: #D4AF37; background: linear-gradient(135deg, #1A1A2E 0%, #0F1419 100%);" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-ts-gold text-ts-dark px-8 py-3 rounded-full font-bold text-sm shadow-xl" style="letter-spacing: 0.1em; font-size: 0.875rem; text-transform: uppercase;">
+                            <i class="fas fa-star mr-2"></i>POPULAIR
+                        </div>
+                        <h3 class="text-2xl font-bold mb-2 text-ts-gold">Standaard</h3>
+                        <p class="text-sm text-gray-400 mb-6">3 × 30 minuten</p>
+                        <p class="text-5xl font-bold mb-6 text-ts-gold">€695</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>3 × 30 minuten</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Techniek en stageset inbegrepen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Tot 150 personen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Opbouw/afbouw ~45 min</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 mb-6">Incl. 21% btw</p>
+                        <a href="#contact" class="w-full inline-block px-6 py-3 bg-ts-gold text-ts-dark font-semibold rounded-lg hover:bg-yellow-300 transition duration-500 text-center font-bold mt-auto">
+                            Offerte aanvragen
+                        </a>
+                    </div>
+                    
+                    <!-- Pakket 3 -->
+                    <div class="rounded-xl shadow-xl hover:shadow-2xl transition-all border-2 p-8 hover:border-ts-gold flex flex-col" data-aos="fade-up" data-aos-delay="200" style="background-color: #0F1419; border-color: #D4AF37;">
+                        <h3 class="text-2xl font-bold mb-2 text-white">Compleet</h3>
+                        <p class="text-sm text-gray-400 mb-6">4 × 30 minuten</p>
+                        <p class="text-4xl font-bold mb-6 text-ts-gold">€795</p>
+                        <ul class="space-y-3 mb-8 text-sm text-gray-300">
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>4 × 30 minuten</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Techniek en stageset inbegrepen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Tot 150 personen</li>
+                            <li><i class="fas fa-check mr-2 text-ts-gold"></i>Complete avondvulling</li>
+                        </ul>
+                        <p class="text-xs text-gray-600 mb-6">Incl. 21% btw</p>
+                        <a href="#contact" class="w-full inline-block px-6 py-3 bg-ts-gold text-ts-dark font-semibold rounded-lg hover:bg-yellow-300 transition duration-500 text-center mt-auto">
+                            Offerte aanvragen
+                        </a>
+                    </div>
+                </div>
+
+                <p class="text-center text-gray-300 text-sm">Alle pakketten zijn flexibel aanpasbaar naar jullie wensen en schema.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-dark text-center mb-16" data-aos="fade-in">Veelgestelde Vragen</h2>
+                
+                <div class="space-y-4">
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" open style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Hoeveel ruimte hebben jullie nodig?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Minimaal 2 × 3 meter voor stageset en techniek. Perfect voor binnen en buiten.</p>
+                    </details>
+
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Is geluid en verlichting inbegrepen?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Ja, volledig. Alle pakketten inclusief professionele geluidset en LED-sfeerverlichting.</p>
+                    </details>
+
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Kunnen we verzoeken doen?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Zeker! Geef jullie lievelingsnummers en wensen door. Ik bouw een setlist volledig op maat.</p>
+                    </details>
+
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Treden jullie ook buiten Noord-Brabant op?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Ja, landelijk! Reiskosten bedragen €0,35 per kilometer en worden vooraf afgestemd.</p>
+                    </details>
+
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Hoe snel krijgen we reactie?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Binnen 24 uur ontvangen jullie een persoonlijk voorstel met datum, all-in prijs en volgende stappen.</p>
+                    </details>
+
+                    <details class="group rounded-lg p-6 shadow-md hover:shadow-lg transition-shadow bg-gray-50 border border-gray-200" style="border-left: 4px solid #D4AF37;">
+                        <summary class="flex items-center justify-between cursor-pointer">
+                            <span class="font-semibold text-ts-dark text-lg">Hoe flexibel is het op de dag zelf?</span>
+                            <i class="fas fa-chevron-down text-ts-gold group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-gray-700 mt-4">Zeer flexibel! Planning verandert? Jullie willen langer? Ik pas me aan zonder extra stress.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="relative py-24" style="background: linear-gradient(135deg, #0F1419 0%, #1A1A2E 100%);">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-4xl md:text-5xl font-serif font-bold text-ts-gold mb-6">Klaar voor je offerte?</h2>
+                    <p class="text-lg text-gray-300 mb-8">Stuur je details in en ontvang binnen 24 uur een persoonlijk voorstel. Geen verplichtingen.</p>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="/#contact" class="inline-block px-8 py-4 bg-ts-gold text-ts-dark font-semibold rounded-lg hover:bg-yellow-400 transition-all transform hover:scale-105 shadow-lg">
+                            Vraag hier je offerte aan
+                        </a>
+                        <a href="https://wa.me/31641268405?text=Hallo%2C%20ik%20ben%20geïnteresseerd%20in%20een%20feest%20met%20live%20zanger" target="_blank" class="inline-block px-8 py-4 border-2 border-ts-gold text-ts-gold font-semibold rounded-lg hover:bg-ts-gold hover:text-ts-dark transition-all transform hover:scale-105">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                    
+                    <p class="text-sm text-gray-400 mt-8">Of bel direct: <a href="tel:+31641268405" class="text-ts-gold hover:underline">+31 6 41 26 84 05</a></p>
+                </div>
             </div>
         </section>
     </main>
@@ -200,7 +515,10 @@
                 <h4 class="text-xl font-serif font-bold mb-4 text-ts-gold">Contact</h4>
                 <p class="text-gray-400 mb-1"><i class="fas fa-envelope mr-2"></i> boeking@thesuitedsinger.nl</p>
                 <p class="text-gray-400 mb-1"><i class="fas fa-phone-alt mr-2"></i> +31 6 41268405</p>
-                <p class="text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> Regio Nederland</p>
+                <p class="text-gray-400 mb-3"><i class="fas fa-map-marker-alt mr-2"></i> Regio Nederland</p>
+                <a href="https://wa.me/31641268405?text=Hallo%20Bernd%2C%20ik%20wil%20graag%20een%20offerte%20voor%20een%20feest." target="_blank" class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg font-semibold transition duration-300">
+                    <i class="fab fa-whatsapp"></i> App Bernd
+                </a>
             </div>
             <div>
                 <h4 class="text-xl font-serif font-bold mb-4 text-ts-gold">Snelle Links</h4>
@@ -230,6 +548,20 @@
             easing: 'ease-in-out-cubic',
             once: true
         });
+        
+        // Show sticky CTA after scrolling 500px on mobile
+        const stickyCta = document.getElementById('sticky-cta');
+        if (stickyCta) {
+            window.addEventListener('scroll', function() {
+                if (window.innerWidth < 768) {
+                    if (window.scrollY > 500) {
+                        stickyCta.style.display = 'block';
+                    } else {
+                        stickyCta.style.display = 'none';
+                    }
+                }
+            });
+        }
     </script><!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
 </body>
