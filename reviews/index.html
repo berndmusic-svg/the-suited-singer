@@ -26,13 +26,13 @@
             theme: {
                 extend: {
                     colors: {
-                        'ts-dark': '#1a1a1a',
-                        'ts-gold': '#d4af37',
-                        'ts-light': '#f5f3f0'
+                        'ts-dark': '#1A1A1A',
+                        'ts-black': '#0A0A0A',
+                        'ts-gold': '#D4AF37',
                     },
                     fontFamily: {
-                        serif: ['Garamond', 'serif'],
-                        sans: ['"Segoe UI"', 'sans-serif']
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Poppins', 'sans-serif']
                     }
                 }
             }
@@ -58,8 +58,19 @@
             box-shadow: 0 4px 12px rgba(212, 175, 55, 0.1);
         }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="/images/The_Suited_Singer_10.avif" type="image/png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4ZZ97SY4W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P4ZZ97SY4W');
+    </script>
 </head>
-<body class="bg-white font-sans text-gray-800">
+<body class="bg-gray-50 font-sans antialiased">
     <!-- Centralized Header -->
     <div id="site-header"></div>
 
@@ -408,12 +419,16 @@
                 <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                     Laat The Suited Singer jouw event of viering tot iets speciaals maken. Of het een bruiloft, bedrijfsfeest of privé-evenement is - ik zorg voor een ervaring die je gasten nooit zullen vergeten.
                 </p>
-                <a href="/index.html#contact" class="inline-block bg-ts-gold text-ts-dark font-semibold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
+                <a href="/#contact" class="inline-block bg-ts-gold text-ts-dark font-semibold py-4 px-8 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105">
                     <i class="fas fa-calendar-alt mr-2"></i>Boek Nu Je Moment
                 </a>
             </div>
         </section>
-    </main><!-- Include Header/Footer Script -->
+    </main>
+
+    <div id="site-footer"></div>
+
+    <!-- Include Header/Footer Script -->
     <script src="/assets/js/includes.js" defer></script>
 </body>
 </html>

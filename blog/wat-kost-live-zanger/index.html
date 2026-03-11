@@ -49,6 +49,8 @@
                         'ts-black': '#0A0A0A',
                     },
                     fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans': ['Poppins', 'sans-serif'],
                         'playfair': ['Playfair Display', 'serif'],
                         'poppins': ['Poppins', 'sans-serif'],
                     }
@@ -88,16 +90,20 @@
         }
     }
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P4ZZ97SY4W"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-P4ZZ97SY4W');
+    </script>
 </head>
-<body class="bg-white text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-ts-black text-white z-50 py-4 px-6 flex justify-between items-center">
-        <a href="/" class="text-2xl font-playfair font-bold ts-gold-text">The Suited Singer</a>
-        <a href="/blog/" class="text-sm hover:ts-gold-text transition">← Terug naar blog</a>
-    </nav>
+<body class="bg-gray-50 font-sans antialiased">
+    <div id="site-header"></div>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 bg-gradient-to-r from-ts-dark to-ts-black text-white">
+    <section class="pb-16 bg-gradient-to-r from-ts-dark to-ts-black text-white">
         <div class="max-w-4xl mx-auto px-6 text-center">
             <h1 class="text-5xl font-playfair font-bold mb-4">Wat kost een live zanger?</h1>
             <p class="text-xl text-gray-300 mb-2">5 tips voor betaalbare kwaliteit</p>
@@ -223,17 +229,12 @@
         </div>
     </article>
 
-    <!-- Footer -->
-    <footer class="bg-ts-black text-white py-8 mt-16">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <p class="mb-2">© 2025 The Suited Singer - Alle rechten voorbehouden</p>
-            <p class="text-sm text-gray-400">Email: boeking@thesuitedsinger.nl | Tel: +31641268405</p>
-        </div>
-    </footer>
+    <div id="site-footer"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="/assets/js/includes.js" defer></script>
 </body>
 </html>
