@@ -15,6 +15,11 @@
 # Old blog hub
 /blog.html /blog/ 301
 
+# Kerstentertainment → externe site
+/diensten/kerstentertainment/ https://www.dekerstzanger.nl/ 301
+/diensten/kerstentertainment https://www.dekerstzanger.nl/ 301
+/thechristmassinger.html https://www.dekerstzanger.nl/ 301
+
 # Legal page aliases
 /algemene-voorwaarden/ /algemene-voorwaarden.html 301
 /blog/algemene-voorwaarden.html /algemene-voorwaarden.html 301
