@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ontvang jouw gratis brochure – The Suited Singer</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ts-gold':  '#D4AF37',
+                        'ts-dark':  '#1A1A1A',
+                        'ts-black': '#0A0A0A',
+                    },
+                    fontFamily: {
+                        'serif': ['"Playfair Display"', 'serif'],
+                        'sans':  ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* keep the whole viewport, no scroll on laptop */
+        html, body {
+            height: 100%;
+            overflow: hidden;
+        }
+        @media (max-height: 650px) {
+            html, body { overflow: auto; }
+        }
+        .gold-line {
+            display: block;
+            width: 48px;
+            height: 2px;
+            background: #D4AF37;
+            margin: 0 auto 1rem;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="date"] {
+            color-scheme: dark;
+        }
+        /* custom date-picker accent */
+        input[type="date"]::-webkit-calendar-picker-indicator {
+            filter: invert(0.8) sepia(1) saturate(3) hue-rotate(3deg);
+            cursor: pointer;
+        }
+        /* success panel animation */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp .4s ease both;
+        }
+    </style>
+</head>
+
+<body class="bg-ts-black font-sans text-white flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-md">
+
+        <!-- Logo / branding -->
+        <div class="text-center mb-5">
+            <img src="/images/Logo_zwart.avif"
+                 alt="The Suited Singer logo"
+                 class="h-14 mx-auto mb-3 invert"
+                 onerror="this.style.display='none'">
+            <span class="gold-line"></span>
+            <h1 class="font-serif text-2xl md:text-3xl font-bold leading-tight tracking-wide">
+                Ontvang jouw gratis<br>
+                <span class="text-ts-gold">brochure</span>
+            </h1>
+            <p class="text-gray-400 text-sm mt-2 font-light leading-snug">
+                Vul je gegevens in en ik stuur je persoonlijk<br>
+                alles over live muziek op jullie trouwdag.
+            </p>
+        </div>
+
+        <!-- FORM -->
+        <form id="brochure-form"
+              class="bg-ts-dark rounded-2xl p-6 space-y-4 shadow-2xl border border-white/5"
+              novalidate>
+
+            <!-- Naam -->
+            <div>
+                <label for="naam" class="block text-xs font-semibold text-ts-gold uppercase tracking-widest mb-1">
+                    Jullie namen
+                </label>
+                <input id="naam" name="naam" type="text"
+                       placeholder="bijv. Emma &amp; Thomas"
+                       required
+                       class="w-full bg-ts-black border border-white/10 rounded-lg px-4 py-2.5
+                              text-sm text-white placeholder-gray-600
+                              focus:outline-none focus:ring-1 focus:ring-ts-gold focus:border-ts-gold
+                              transition">
+            </div>
+
+            <!-- Trouwdatum -->
+            <div>
+                <label for="trouwdatum" class="block text-xs font-semibold text-ts-gold uppercase tracking-widest mb-1">
+                    Trouwdatum
+                </label>
+                <input id="trouwdatum" name="trouwdatum" type="date"
+                       required
+                       class="w-full bg-ts-black border border-white/10 rounded-lg px-4 py-2.5
+                              text-sm text-white placeholder-gray-600
+                              focus:outline-none focus:ring-1 focus:ring-ts-gold focus:border-ts-gold
+                              transition">
+            </div>
+
+            <!-- E-mailadres -->
+            <div>
+                <label for="email" class="block text-xs font-semibold text-ts-gold uppercase tracking-widest mb-1">
+                    E-mailadres
+                </label>
+                <input id="email" name="email" type="email"
+                       placeholder="jullie@email.nl"
+                       required
+                       class="w-full bg-ts-black border border-white/10 rounded-lg px-4 py-2.5
+                              text-sm text-white placeholder-gray-600
+                              focus:outline-none focus:ring-1 focus:ring-ts-gold focus:border-ts-gold
+                              transition">
+            </div>
+
+            <!-- Error message -->
+            <p id="form-error"
+               class="hidden text-red-400 text-xs text-center pt-1">
+                Vul alle velden correct in.
+            </p>
+
+            <!-- Submit -->
+            <button type="submit"
+                    id="submit-btn"
+                    class="w-full bg-ts-gold text-ts-black font-semibold text-sm rounded-lg py-3
+                           tracking-widest uppercase hover:brightness-110 active:scale-[.98]
+                           transition focus:outline-none focus:ring-2 focus:ring-ts-gold focus:ring-offset-2
+                           focus:ring-offset-ts-dark flex items-center justify-center gap-2">
+                <span id="btn-label">Stuur mij de brochure</span>
+                <svg id="btn-spinner" class="hidden animate-spin h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z"></path>
+                </svg>
+            </button>
+
+        </form>
+
+        <!-- SUCCESS panel (hidden initially) -->
+        <div id="success-panel"
+             class="hidden animate-fade-in-up bg-ts-dark rounded-2xl p-6 text-center shadow-2xl border border-ts-gold/30">
+            <div class="text-4xl mb-3">💌</div>
+            <h2 class="font-serif text-xl font-bold text-ts-gold mb-2">Bedankt!</h2>
+            <p class="text-gray-300 text-sm font-light leading-relaxed">
+                De brochure is onderweg naar jullie inbox.<br>
+                Tot gauw op de dansvloer! 🎶
+            </p>
+            <p id="countdown-msg" class="text-gray-500 text-xs mt-4"></p>
+        </div>
+
+        <!-- Footer note -->
+        <p class="text-center text-gray-600 text-xs mt-5">
+            thesuitedsinger.nl &nbsp;·&nbsp; Geen spam, gewoon stijl.
+        </p>
+
+    </div>
+
+    <script>
+    (function () {
+        const FORMSPREE_URL = 'https://formspree.io/f/xjgplrzz';
+        const REDIRECT_DELAY = 5; // seconds before form reappears
+
+        const form        = document.getElementById('brochure-form');
+        const successPanel = document.getElementById('success-panel');
+        const submitBtn   = document.getElementById('submit-btn');
+        const btnLabel    = document.getElementById('btn-label');
+        const btnSpinner  = document.getElementById('btn-spinner');
+        const formError   = document.getElementById('form-error');
+        const countdownMsg = document.getElementById('countdown-msg');
+
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            formError.classList.add('hidden');
+
+            // Basic HTML5 validation check
+            if (!form.checkValidity()) {
+                formError.classList.remove('hidden');
+                return;
+            }
+
+            // Show spinner
+            submitBtn.disabled = true;
+            btnLabel.textContent = 'Verzenden…';
+            btnSpinner.classList.remove('hidden');
+
+            const data = {
+                naam:       document.getElementById('naam').value.trim(),
+                trouwdatum: document.getElementById('trouwdatum').value,
+                email:      document.getElementById('email').value.trim(),
+            };
+
+            try {
+                const response = await fetch(FORMSPREE_URL, {
+                    method:  'POST',
+                    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                    body:    JSON.stringify(data),
+                });
+
+                if (response.ok) {
+                    showSuccess();
+                } else {
+                    throw new Error('server error');
+                }
+            } catch (_) {
+                // Restore button on error
+                submitBtn.disabled = false;
+                btnLabel.textContent = 'Stuur mij de brochure';
+                btnSpinner.classList.add('hidden');
+                formError.textContent = 'Er ging iets mis. Probeer het opnieuw.';
+                formError.classList.remove('hidden');
+            }
+        });
+
+        function showSuccess() {
+            form.classList.add('hidden');
+            successPanel.classList.remove('hidden');
+
+            // Countdown and reset
+            let remaining = REDIRECT_DELAY;
+            updateCountdown(remaining);
+            const timer = setInterval(function () {
+                remaining -= 1;
+                updateCountdown(remaining);
+                if (remaining <= 0) {
+                    clearInterval(timer);
+                    resetForm();
+                }
+            }, 1000);
+        }
+
+        function updateCountdown(sec) {
+            countdownMsg.textContent = sec > 0
+                ? 'Formulier wordt over ' + sec + ' seconden opnieuw geladen…'
+                : '';
+        }
+
+        function resetForm() {
+            form.reset();
+            submitBtn.disabled = false;
+            btnLabel.textContent = 'Stuur mij de brochure';
+            btnSpinner.classList.add('hidden');
+            successPanel.classList.add('hidden');
+            form.classList.remove('hidden');
+        }
+    })();
+    </script>
+
+</body>
+</html>
