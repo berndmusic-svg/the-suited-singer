@@ -27,16 +27,6 @@
     </script>
 
     <style>
-        /* background image with dark overlay */
-        body {
-            background-image:
-                linear-gradient(to bottom, rgba(10,10,10,.72) 0%, rgba(10,10,10,.85) 100%),
-                url('/images/blog_bruiloft.avif');
-            background-size: cover;
-            background-position: center top;
-            background-attachment: fixed;
-        }
-
         /* keep the whole viewport, no scroll on laptop */
         html, body {
             height: 100%;
@@ -73,9 +63,16 @@
     </style>
 </head>
 
-<body class="font-sans text-white flex items-center justify-center min-h-screen p-4">
+<body class="font-sans text-white flex items-center justify-center min-h-screen p-4" style="background-color:#0A0A0A;">
 
-    <div class="w-full max-w-md">
+    <!-- Full-screen background -->
+    <div style="position:fixed;inset:0;z-index:0;
+                background-image:url('/images/blog_bruiloft.avif');
+                background-size:cover;background-position:center;"></div>
+    <!-- Dark overlay -->
+    <div style="position:fixed;inset:0;z-index:1;background:linear-gradient(to bottom,rgba(10,10,10,.70),rgba(10,10,10,.88));"></div>
+
+    <div class="w-full max-w-md" style="position:relative;z-index:2;">
 
         <!-- Logo / branding -->
         <div class="text-center mb-5">
